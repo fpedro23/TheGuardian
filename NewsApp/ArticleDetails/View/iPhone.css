@@ -1,15 +1,17 @@
 
 
-@font-face
-{
-    font-family: '-apple-system','Avenir-Light';
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
+
 
 p
 {
-    font-family: '-apple-system','Avenir-Light';
-    font-size: 70px;
-    font-weight: lighter;
+    font-family: "Avenir Next";
+    font-size: 50px;
+    font-weight: normal;
 }
 
 
