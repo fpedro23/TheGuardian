@@ -1,0 +1,175 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ArticlesListWireframe"
+provides-nominal:
+- "7NewsApp21ArticlesListWireframeC"
+provides-member:
+- ["7NewsApp21ArticlesListWireframeC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Article"
+- "ArticleDetailsWireframe"
+- "ArticlesListPresenter"
+- "ArticlesListWireframe"
+- !private "BooleanLiteralType"
+- "NSObject"
+- "UINavigationController"
+- "UIViewController"
+depends-member:
+- ["7NewsApp23ArticleDetailsWireframeC", "init"]
+- !private ["7NewsApp23ArticleDetailsWireframeC", "mainViewController"]
+- ["7NewsApp21ArticlesListWireframeC", "Article"]
+- ["7NewsApp21ArticlesListWireframeC", "ArticleDetailsWireframe"]
+- ["7NewsApp21ArticlesListWireframeC", "ArticlesListPresenter"]
+- ["7NewsApp21ArticlesListWireframeC", "UINavigationController"]
+- ["7NewsApp21ArticlesListWireframeC", "UIViewController"]
+- ["7NewsApp21ArticlesListWireframeC", "articleDetailsWireframe"]
+- ["7NewsApp21ArticlesListWireframeC", "deinit"]
+- ["7NewsApp21ArticlesListWireframeC", "init"]
+- ["7NewsApp21ArticlesListWireframeC", "navigationController"]
+- ["7NewsApp21ArticlesListWireframeC", "presenter"]
+- ["7NewsApp21ArticlesListWireframeC", "pushControllerFromPreview"]
+- ["7NewsApp21ArticlesListWireframeC", "showArticleDetails"]
+- ["7NewsApp21ArticlesListWireframeC", "viewControllerForPreview"]
+- ["s7CVarArgP", "ArticleDetailsWireframe"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "articleDetailsWireframe"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "pushViewController"]
+- !private ["s7CVarArgP", "show"]
+- ["s28CustomDebugStringConvertibleP", "ArticleDetailsWireframe"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "articleDetailsWireframe"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "show"]
+- ["s23CustomStringConvertibleP", "ArticleDetailsWireframe"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "articleDetailsWireframe"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "pushViewController"]
+- !private ["s23CustomStringConvertibleP", "show"]
+- ["s9EquatableP", "ArticleDetailsWireframe"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "articleDetailsWireframe"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "navigationController"]
+- !private ["s9EquatableP", "pushViewController"]
+- !private ["s9EquatableP", "show"]
+- ["s8HashableP", "ArticleDetailsWireframe"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "articleDetailsWireframe"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "navigationController"]
+- !private ["s8HashableP", "pushViewController"]
+- !private ["s8HashableP", "show"]
+- !private ["So8NSCodingP", "pushViewController"]
+- !private ["So8NSCodingP", "show"]
+- !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "show"]
+- ["So8NSObjectC", "Article"]
+- ["So8NSObjectC", "ArticleDetailsWireframe"]
+- ["So8NSObjectC", "ArticlesListPresenter"]
+- ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "articleDetailsWireframe"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "navigationController"]
+- ["So8NSObjectC", "presenter"]
+- ["So8NSObjectC", "pushControllerFromPreview"]
+- !private ["So8NSObjectC", "pushViewController"]
+- !private ["So8NSObjectC", "show"]
+- ["So8NSObjectC", "showArticleDetails"]
+- ["So8NSObjectC", "viewControllerForPreview"]
+- ["So16NSObjectProtocolP", "ArticleDetailsWireframe"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "articleDetailsWireframe"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "navigationController"]
+- !private ["So16NSObjectProtocolP", "pushViewController"]
+- !private ["So16NSObjectProtocolP", "show"]
+- !private ["So21UIAppearanceContainerP", "pushViewController"]
+- !private ["So21UIAppearanceContainerP", "show"]
+- !private ["So18UIContentContainerP", "pushViewController"]
+- !private ["So18UIContentContainerP", "show"]
+- !private ["So18UIFocusEnvironmentP", "pushViewController"]
+- !private ["So18UIFocusEnvironmentP", "show"]
+- !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So22UINavigationControllerC", "show"]
+- !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "show"]
+- !private ["So11UIResponderC", "pushViewController"]
+- !private ["So11UIResponderC", "show"]
+- !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "show"]
+- !private ["So16UIStateRestoringP", "pushViewController"]
+- !private ["So16UIStateRestoringP", "show"]
+- !private ["So18UITraitEnvironmentP", "pushViewController"]
+- !private ["So18UITraitEnvironmentP", "show"]
+- !private ["So16UIViewControllerC", "pushViewController"]
+- !private ["So16UIViewControllerC", "show"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ArticleDetailsWireframe"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "articleDetailsWireframe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
+depends-nominal:
+- "7NewsApp23ArticleDetailsWireframeC"
+- "7NewsApp21ArticlesListWireframeC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So22UINavigationControllerC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So16UIViewControllerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d5504146a139c5b33c776e40f434433c"

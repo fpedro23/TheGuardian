@@ -1,0 +1,547 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ArticleDetailsViewController"
+provides-nominal:
+- "7NewsApp28ArticleDetailsViewControllerC"
+provides-member:
+- ["7NewsApp28ArticleDetailsViewControllerC", ""]
+provides-dynamic-lookup:
+- "bodyView"
+- "dateLabel"
+- "didReceiveMemoryWarning"
+- "titleLabel"
+- "viewDidLoad"
+depends-top-level:
+- !private "+"
+- "ArticleDetailsPresenterProtocol"
+- "ArticleDetailsViewController"
+- "ArticleDetailsViewProtocol"
+- "AssignmentPrecedence"
+- !private "Bundle"
+- "String"
+- !private "StringLiteralType"
+- "UILabel"
+- "UIViewController"
+- !private "URL"
+- !private "UnicodeScalarType"
+- "WKWebView"
+- !private "print"
+depends-member:
+- !private ["7NewsApp31ArticleDetailsPresenterProtocolP", "fetchArticleDetails"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "ArticleDetailsPresenterProtocol"]
+- !private ["7NewsApp28ArticleDetailsViewControllerC", "Bundle"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "String"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "UILabel"]
+- !private ["7NewsApp28ArticleDetailsViewControllerC", "URL"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "WKWebView"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "bodyView"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "dateLabel"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "deinit"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "didReceiveMemoryWarning"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "eventHandler"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "init"]
+- !private ["7NewsApp28ArticleDetailsViewControllerC", "print"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "setBody"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "setCSSToHTMLString"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "setDate"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "setTitle"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "titleLabel"]
+- ["7NewsApp28ArticleDetailsViewControllerC", "viewDidLoad"]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "Bundle"]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "URL"]
+- ["7NewsApp26ArticleDetailsViewProtocolP", ""]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "bodyView"]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "dateLabel"]
+- ["7NewsApp26ArticleDetailsViewProtocolP", "eventHandler"]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "print"]
+- ["7NewsApp26ArticleDetailsViewProtocolP", "setBody"]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "setCSSToHTMLString"]
+- ["7NewsApp26ArticleDetailsViewProtocolP", "setDate"]
+- ["7NewsApp26ArticleDetailsViewProtocolP", "setTitle"]
+- !private ["7NewsApp26ArticleDetailsViewProtocolP", "titleLabel"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So6BundleC", "main"]
+- !private ["So6BundleC", "path"]
+- !private ["So15CALayerDelegateP", "loadHTMLString"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "URL"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "bodyView"]
+- !private ["s7CVarArgP", "dateLabel"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- ["s7CVarArgP", "eventHandler"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "loadHTMLString"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "path"]
+- !private ["s7CVarArgP", "print"]
+- ["s7CVarArgP", "setBody"]
+- !private ["s7CVarArgP", "setCSSToHTMLString"]
+- ["s7CVarArgP", "setDate"]
+- ["s7CVarArgP", "setTitle"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "titleLabel"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "bodyView"]
+- !private ["s28CustomDebugStringConvertibleP", "dateLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- ["s28CustomDebugStringConvertibleP", "eventHandler"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "loadHTMLString"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- ["s28CustomDebugStringConvertibleP", "setBody"]
+- !private ["s28CustomDebugStringConvertibleP", "setCSSToHTMLString"]
+- ["s28CustomDebugStringConvertibleP", "setDate"]
+- ["s28CustomDebugStringConvertibleP", "setTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "bodyView"]
+- !private ["s23CustomStringConvertibleP", "dateLabel"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- ["s23CustomStringConvertibleP", "eventHandler"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "loadHTMLString"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- ["s23CustomStringConvertibleP", "setBody"]
+- !private ["s23CustomStringConvertibleP", "setCSSToHTMLString"]
+- ["s23CustomStringConvertibleP", "setDate"]
+- ["s23CustomStringConvertibleP", "setTitle"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "titleLabel"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Bundle"]
+- !private ["s9EquatableP", "URL"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "bodyView"]
+- !private ["s9EquatableP", "dateLabel"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- ["s9EquatableP", "eventHandler"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "loadHTMLString"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "path"]
+- !private ["s9EquatableP", "print"]
+- ["s9EquatableP", "setBody"]
+- !private ["s9EquatableP", "setCSSToHTMLString"]
+- ["s9EquatableP", "setDate"]
+- ["s9EquatableP", "setTitle"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "titleLabel"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Bundle"]
+- !private ["s8HashableP", "URL"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "bodyView"]
+- !private ["s8HashableP", "dateLabel"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- ["s8HashableP", "eventHandler"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "loadHTMLString"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "path"]
+- !private ["s8HashableP", "print"]
+- ["s8HashableP", "setBody"]
+- !private ["s8HashableP", "setCSSToHTMLString"]
+- ["s8HashableP", "setDate"]
+- ["s8HashableP", "setTitle"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "titleLabel"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Bundle"]
+- !private ["So8NSCodingP", "URL"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "bodyView"]
+- !private ["So8NSCodingP", "dateLabel"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- ["So8NSCodingP", "eventHandler"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "loadHTMLString"]
+- !private ["So8NSCodingP", "print"]
+- ["So8NSCodingP", "setBody"]
+- !private ["So8NSCodingP", "setCSSToHTMLString"]
+- ["So8NSCodingP", "setDate"]
+- ["So8NSCodingP", "setTitle"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "titleLabel"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "Bundle"]
+- !private ["So26NSExtensionRequestHandlingP", "URL"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "bodyView"]
+- !private ["So26NSExtensionRequestHandlingP", "dateLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- ["So26NSExtensionRequestHandlingP", "eventHandler"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- ["So26NSExtensionRequestHandlingP", "setBody"]
+- !private ["So26NSExtensionRequestHandlingP", "setCSSToHTMLString"]
+- ["So26NSExtensionRequestHandlingP", "setDate"]
+- ["So26NSExtensionRequestHandlingP", "setTitle"]
+- !private ["So26NSExtensionRequestHandlingP", "titleLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "ArticleDetailsPresenterProtocol"]
+- !private ["So8NSObjectC", "Bundle"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "WKWebView"]
+- ["So8NSObjectC", "bodyView"]
+- ["So8NSObjectC", "dateLabel"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "eventHandler"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "loadHTMLString"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "path"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "setBody"]
+- ["So8NSObjectC", "setCSSToHTMLString"]
+- ["So8NSObjectC", "setDate"]
+- ["So8NSObjectC", "setTitle"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "titleLabel"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Bundle"]
+- !private ["So16NSObjectProtocolP", "URL"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "bodyView"]
+- !private ["So16NSObjectProtocolP", "dateLabel"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- ["So16NSObjectProtocolP", "eventHandler"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "loadHTMLString"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "path"]
+- !private ["So16NSObjectProtocolP", "print"]
+- ["So16NSObjectProtocolP", "setBody"]
+- !private ["So16NSObjectProtocolP", "setCSSToHTMLString"]
+- ["So16NSObjectProtocolP", "setDate"]
+- ["So16NSObjectProtocolP", "setTitle"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "titleLabel"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "loadHTMLString"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "loadHTMLString"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Bundle"]
+- !private ["So21UIAppearanceContainerP", "URL"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "bodyView"]
+- !private ["So21UIAppearanceContainerP", "dateLabel"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- ["So21UIAppearanceContainerP", "eventHandler"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "loadHTMLString"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- ["So21UIAppearanceContainerP", "setBody"]
+- !private ["So21UIAppearanceContainerP", "setCSSToHTMLString"]
+- ["So21UIAppearanceContainerP", "setDate"]
+- ["So21UIAppearanceContainerP", "setTitle"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "titleLabel"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "Bundle"]
+- !private ["So18UIContentContainerP", "URL"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "bodyView"]
+- !private ["So18UIContentContainerP", "dateLabel"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- ["So18UIContentContainerP", "eventHandler"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "print"]
+- ["So18UIContentContainerP", "setBody"]
+- !private ["So18UIContentContainerP", "setCSSToHTMLString"]
+- ["So18UIContentContainerP", "setDate"]
+- ["So18UIContentContainerP", "setTitle"]
+- !private ["So18UIContentContainerP", "titleLabel"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "loadHTMLString"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "loadHTMLString"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Bundle"]
+- !private ["So18UIFocusEnvironmentP", "URL"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "bodyView"]
+- !private ["So18UIFocusEnvironmentP", "dateLabel"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- ["So18UIFocusEnvironmentP", "eventHandler"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "loadHTMLString"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- ["So18UIFocusEnvironmentP", "setBody"]
+- !private ["So18UIFocusEnvironmentP", "setCSSToHTMLString"]
+- ["So18UIFocusEnvironmentP", "setDate"]
+- ["So18UIFocusEnvironmentP", "setTitle"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "titleLabel"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "loadHTMLString"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
+- !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "bodyView"]
+- !private ["So30UIPasteConfigurationSupportingP", "dateLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "eventHandler"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "loadHTMLString"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- ["So30UIPasteConfigurationSupportingP", "setBody"]
+- !private ["So30UIPasteConfigurationSupportingP", "setCSSToHTMLString"]
+- ["So30UIPasteConfigurationSupportingP", "setDate"]
+- ["So30UIPasteConfigurationSupportingP", "setTitle"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "ArticleDetailsPresenterProtocol"]
+- !private ["So11UIResponderC", "Bundle"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UILabel"]
+- !private ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "WKWebView"]
+- ["So11UIResponderC", "bodyView"]
+- ["So11UIResponderC", "dateLabel"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "eventHandler"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "loadHTMLString"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "setBody"]
+- ["So11UIResponderC", "setCSSToHTMLString"]
+- ["So11UIResponderC", "setDate"]
+- ["So11UIResponderC", "setTitle"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "titleLabel"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Bundle"]
+- !private ["So30UIResponderStandardEditActionsP", "URL"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "bodyView"]
+- !private ["So30UIResponderStandardEditActionsP", "dateLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "eventHandler"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "loadHTMLString"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- ["So30UIResponderStandardEditActionsP", "setBody"]
+- !private ["So30UIResponderStandardEditActionsP", "setCSSToHTMLString"]
+- ["So30UIResponderStandardEditActionsP", "setDate"]
+- ["So30UIResponderStandardEditActionsP", "setTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "titleLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "Bundle"]
+- !private ["So16UIStateRestoringP", "URL"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "bodyView"]
+- !private ["So16UIStateRestoringP", "dateLabel"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- ["So16UIStateRestoringP", "eventHandler"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "print"]
+- ["So16UIStateRestoringP", "setBody"]
+- !private ["So16UIStateRestoringP", "setCSSToHTMLString"]
+- ["So16UIStateRestoringP", "setDate"]
+- ["So16UIStateRestoringP", "setTitle"]
+- !private ["So16UIStateRestoringP", "titleLabel"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "Bundle"]
+- !private ["So18UITraitEnvironmentP", "URL"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "bodyView"]
+- !private ["So18UITraitEnvironmentP", "dateLabel"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- ["So18UITraitEnvironmentP", "eventHandler"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "loadHTMLString"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- ["So18UITraitEnvironmentP", "setBody"]
+- !private ["So18UITraitEnvironmentP", "setCSSToHTMLString"]
+- ["So18UITraitEnvironmentP", "setDate"]
+- ["So18UITraitEnvironmentP", "setTitle"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "titleLabel"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So6UIViewC", "loadHTMLString"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "ArticleDetailsPresenterProtocol"]
+- !private ["So16UIViewControllerC", "Bundle"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UILabel"]
+- !private ["So16UIViewControllerC", "URL"]
+- ["So16UIViewControllerC", "WKWebView"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "bodyView"]
+- ["So16UIViewControllerC", "dateLabel"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "eventHandler"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "setBody"]
+- ["So16UIViewControllerC", "setCSSToHTMLString"]
+- ["So16UIViewControllerC", "setDate"]
+- ["So16UIViewControllerC", "setTitle"]
+- ["So16UIViewControllerC", "titleLabel"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["So9WKWebViewC", "loadHTMLString"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "loadHTMLString"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bodyView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "eventHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadHTMLString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "setBody"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setCSSToHTMLString"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "setDate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "7NewsApp31ArticleDetailsPresenterProtocolP"
+- "7NewsApp28ArticleDetailsViewControllerC"
+- "7NewsApp26ArticleDetailsViewProtocolP"
+- !private "s23BidirectionalCollectionP"
+- !private "So6BundleC"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "10Foundation3URLV"
+- !private "9Alamofire14URLConvertibleP"
+- !private "So9WKWebViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "7a968728aee2b9105cb2f90e9f0acd16"

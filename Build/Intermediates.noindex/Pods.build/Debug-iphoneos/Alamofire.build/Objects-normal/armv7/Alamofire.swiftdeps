@@ -1,0 +1,120 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Alamofire"
+provides-nominal:
+- "9AlamofireAAO"
+provides-member:
+- ["9AlamofireAAO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Alamofire"
+- "Data"
+- "DataRequest"
+- "DownloadRequest"
+- "HTTPHeaders"
+- "HTTPMethod"
+- "InputStream"
+- "MultipartFormData"
+- !private "MultipartUpload"
+- "ParameterEncoding"
+- "Parameters"
+- !private "SessionManager"
+- "UInt64"
+- "URL"
+- "URLConvertible"
+- !private "URLEncoding"
+- "URLRequestConvertible"
+- "UploadRequest"
+- "Void"
+depends-member:
+- ["9AlamofireAAO", "Data"]
+- ["9AlamofireAAO", "DataRequest"]
+- ["9AlamofireAAO", "DownloadRequest"]
+- ["9AlamofireAAO", "HTTPHeaders"]
+- ["9AlamofireAAO", "HTTPMethod"]
+- ["9AlamofireAAO", "InputStream"]
+- ["9AlamofireAAO", "MultipartFormData"]
+- !private ["9AlamofireAAO", "MultipartUpload"]
+- ["9AlamofireAAO", "ParameterEncoding"]
+- ["9AlamofireAAO", "Parameters"]
+- !private ["9AlamofireAAO", "SessionManager"]
+- ["9AlamofireAAO", "UInt64"]
+- ["9AlamofireAAO", "URL"]
+- ["9AlamofireAAO", "URLConvertible"]
+- !private ["9AlamofireAAO", "URLEncoding"]
+- ["9AlamofireAAO", "URLRequestConvertible"]
+- ["9AlamofireAAO", "UploadRequest"]
+- ["9AlamofireAAO", "Void"]
+- ["9AlamofireAAO", "download"]
+- ["9AlamofireAAO", "request"]
+- ["9AlamofireAAO", "upload"]
+- ["s28CustomDebugStringConvertibleP", "Destination"]
+- ["s23CustomStringConvertibleP", "Destination"]
+- ["9Alamofire15DownloadRequestC", "Destination"]
+- ["s9EquatableP", "Destination"]
+- !private ["s9EquatableP", "get"]
+- !private ["s9EquatableP", "post"]
+- !private ["9Alamofire10HTTPMethodO", "get"]
+- !private ["9Alamofire10HTTPMethodO", "post"]
+- ["s8HashableP", "Destination"]
+- !private ["s8HashableP", "get"]
+- !private ["s8HashableP", "post"]
+- !private ["9Alamofire15MultipartUploadC", "encodingMemoryThreshold"]
+- !private ["9Alamofire17ParameterEncodingP", "default"]
+- !private ["s16RawRepresentableP", "get"]
+- !private ["s16RawRepresentableP", "post"]
+- ["9Alamofire7RequestC", "Destination"]
+- !private ["9Alamofire14SessionManagerC", "default"]
+- !private ["9Alamofire14SessionManagerC", "download"]
+- !private ["9Alamofire14SessionManagerC", "request"]
+- !private ["9Alamofire14SessionManagerC", "upload"]
+- !private ["9Alamofire11URLEncodingV", "default"]
+- !private ["9Alamofire11URLEncodingV", "deinit"]
+- !private ["9Alamofire21URLRequestConvertibleP", "encodingMemoryThreshold"]
+- !private ["9Alamofire17UploadConvertibleP", "encodingMemoryThreshold"]
+- !private ["9Alamofire21UploadableConvertibleP", "encodingMemoryThreshold"]
+depends-nominal:
+- "9AlamofireAAO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "9Alamofire15DownloadRequestC"
+- "s9EquatableP"
+- !private "9Alamofire10HTTPMethodO"
+- "s8HashableP"
+- !private "9Alamofire15MultipartUploadC"
+- !private "9Alamofire17ParameterEncodingP"
+- !private "s16RawRepresentableP"
+- "9Alamofire7RequestC"
+- !private "9Alamofire14SessionManagerC"
+- !private "9Alamofire11URLEncodingV"
+- !private "9Alamofire21URLRequestConvertibleP"
+- !private "9Alamofire17UploadConvertibleP"
+- !private "9Alamofire21UploadableConvertibleP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "797db8dc01b447c8c1d3f031ccb9b447"

@@ -1,0 +1,103 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ArticlesListNavigator"
+provides-nominal:
+- "7NewsApp21ArticlesListNavigatorC"
+provides-member:
+- ["7NewsApp21ArticlesListNavigatorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "ArticlesListInteractor"
+- "ArticlesListNavigator"
+- !private "ArticlesListPresenter"
+- "ArticlesListViewProtocol"
+- "ArticlesListWireframe"
+- "AssignmentPrecedence"
+- !private "OfflineNetworkLayer"
+depends-member:
+- !private ["7NewsApp22ArticlesListInteractorC", "init"]
+- !private ["7NewsApp22ArticlesListInteractorC", "presenter"]
+- !private ["7NewsApp21ArticlesListNavigatorC", "ArticlesListInteractor"]
+- !private ["7NewsApp21ArticlesListNavigatorC", "ArticlesListPresenter"]
+- ["7NewsApp21ArticlesListNavigatorC", "ArticlesListViewProtocol"]
+- ["7NewsApp21ArticlesListNavigatorC", "ArticlesListWireframe"]
+- !private ["7NewsApp21ArticlesListNavigatorC", "OfflineNetworkLayer"]
+- ["7NewsApp21ArticlesListNavigatorC", "articlesListView"]
+- ["7NewsApp21ArticlesListNavigatorC", "articlesListWireframe"]
+- ["7NewsApp21ArticlesListNavigatorC", "deinit"]
+- ["7NewsApp21ArticlesListNavigatorC", "init"]
+- ["7NewsApp21ArticlesListNavigatorC", "setup"]
+- ["7NewsApp21ArticlesListNavigatorC", "setupArticlesListModule"]
+- !private ["7NewsApp21ArticlesListPresenterC", "init"]
+- !private ["7NewsApp21ArticlesListPresenterC", "interactor"]
+- !private ["7NewsApp21ArticlesListPresenterC", "view"]
+- !private ["7NewsApp21ArticlesListPresenterC", "wireframe"]
+- !private ["7NewsApp24ArticlesListViewProtocolP", "eventHandler"]
+- ["7NewsApp21ArticlesListWireframeC", "init"]
+- !private ["7NewsApp21ArticlesListWireframeC", "presenter"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "presenter"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "presenter"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "presenter"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "presenter"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "presenter"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "presenter"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "presenter"]
+- !private ["7NewsApp12NetworkLayerP", "init"]
+- !private ["7NewsApp19OfflineNetworkLayerC", "deinit"]
+- !private ["7NewsApp19OfflineNetworkLayerC", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "presenter"]
+depends-nominal:
+- !private "7NewsApp22ArticlesListInteractorC"
+- "7NewsApp21ArticlesListNavigatorC"
+- !private "7NewsApp21ArticlesListPresenterC"
+- !private "7NewsApp24ArticlesListViewProtocolP"
+- "7NewsApp21ArticlesListWireframeC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "7NewsApp12NetworkLayerP"
+- !private "7NewsApp19OfflineNetworkLayerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "e08aab77ffc2c9d895c18aa1a04075db"

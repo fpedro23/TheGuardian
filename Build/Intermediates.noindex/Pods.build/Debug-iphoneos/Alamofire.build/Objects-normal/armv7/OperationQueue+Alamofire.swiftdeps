@@ -1,0 +1,143 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So14OperationQueueC", ""]
+- ["So14OperationQueueC", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "DispatchQueue"
+- "Int"
+- "OperationQueue"
+- "QualityOfService"
+- "String"
+depends-member:
+- !private ["s7CVarArgP", "OperationQueue"]
+- !private ["s7CVarArgP", "defaultMaxConcurrentOperationCount"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isSuspended"]
+- !private ["s7CVarArgP", "maxConcurrentOperationCount"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "qualityOfService"]
+- !private ["s7CVarArgP", "underlyingQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "OperationQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "defaultMaxConcurrentOperationCount"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isSuspended"]
+- !private ["s28CustomDebugStringConvertibleP", "maxConcurrentOperationCount"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "qualityOfService"]
+- !private ["s28CustomDebugStringConvertibleP", "underlyingQueue"]
+- !private ["s23CustomStringConvertibleP", "OperationQueue"]
+- !private ["s23CustomStringConvertibleP", "defaultMaxConcurrentOperationCount"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isSuspended"]
+- !private ["s23CustomStringConvertibleP", "maxConcurrentOperationCount"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "qualityOfService"]
+- !private ["s23CustomStringConvertibleP", "underlyingQueue"]
+- !private ["s9EquatableP", "OperationQueue"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "defaultMaxConcurrentOperationCount"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isSuspended"]
+- !private ["s9EquatableP", "maxConcurrentOperationCount"]
+- !private ["s9EquatableP", "name"]
+- !private ["s9EquatableP", "qualityOfService"]
+- !private ["s9EquatableP", "underlyingQueue"]
+- !private ["s8HashableP", "OperationQueue"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "defaultMaxConcurrentOperationCount"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isSuspended"]
+- !private ["s8HashableP", "maxConcurrentOperationCount"]
+- !private ["s8HashableP", "name"]
+- !private ["s8HashableP", "qualityOfService"]
+- !private ["s8HashableP", "underlyingQueue"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "DispatchQueue"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "OperationQueue"]
+- ["So8NSObjectC", "QualityOfService"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "defaultMaxConcurrentOperationCount"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isSuspended"]
+- !private ["So8NSObjectC", "maxConcurrentOperationCount"]
+- !private ["So8NSObjectC", "name"]
+- !private ["So8NSObjectC", "qualityOfService"]
+- !private ["So8NSObjectC", "underlyingQueue"]
+- !private ["So16NSObjectProtocolP", "OperationQueue"]
+- !private ["So16NSObjectProtocolP", "defaultMaxConcurrentOperationCount"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isSuspended"]
+- !private ["So16NSObjectProtocolP", "maxConcurrentOperationCount"]
+- !private ["So16NSObjectProtocolP", "name"]
+- !private ["So16NSObjectProtocolP", "qualityOfService"]
+- !private ["So16NSObjectProtocolP", "underlyingQueue"]
+- ["So14OperationQueueC", "Bool"]
+- ["So14OperationQueueC", "DispatchQueue"]
+- ["So14OperationQueueC", "Int"]
+- !private ["So14OperationQueueC", "OperationQueue"]
+- ["So14OperationQueueC", "QualityOfService"]
+- ["So14OperationQueueC", "String"]
+- !private ["So14OperationQueueC", "defaultMaxConcurrentOperationCount"]
+- ["So14OperationQueueC", "init"]
+- !private ["So14OperationQueueC", "isSuspended"]
+- !private ["So14OperationQueueC", "maxConcurrentOperationCount"]
+- !private ["So14OperationQueueC", "name"]
+- !private ["So14OperationQueueC", "qualityOfService"]
+- !private ["So14OperationQueueC", "underlyingQueue"]
+- !private ["SC16QualityOfServiceO", "default"]
+- !private ["s16RawRepresentableP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OperationQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "defaultMaxConcurrentOperationCount"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isSuspended"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "maxConcurrentOperationCount"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "qualityOfService"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "underlyingQueue"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9EquatableP"
+- !private "s8HashableP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- "So14OperationQueueC"
+- !private "SC16QualityOfServiceO"
+- !private "s16RawRepresentableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "410766ffe4f627a8b06f76e03d9eeaff"

@@ -1,0 +1,451 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ArticlesListPresenter"
+provides-nominal:
+- "7NewsApp21ArticlesListPresenterC"
+provides-member:
+- ["7NewsApp21ArticlesListPresenterC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private ">"
+- !private "??"
+- !private "Array"
+- "Article"
+- "ArticlesListCellProtocol"
+- "ArticlesListInteractor"
+- "ArticlesListPresenter"
+- "ArticlesListViewProtocol"
+- "ArticlesListWireframe"
+- "AssignmentPrecedence"
+- !private "Calendar"
+- "Date"
+- "DateFormatter"
+- "IndexPath"
+- "Int"
+- "String"
+- !private "StringLiteralType"
+- "UIViewController"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["7NewsApp7ArticleC", "date"]
+- !private ["7NewsApp7ArticleC", "deinit"]
+- !private ["7NewsApp7ArticleC", "init"]
+- !private ["7NewsApp7ArticleC", "title"]
+- !private ["7NewsApp24ArticlesListCellProtocolP", "setTime"]
+- !private ["7NewsApp24ArticlesListCellProtocolP", "setTitle"]
+- !private ["7NewsApp22ArticlesListInteractorC", "fetchArticles"]
+- ["7NewsApp21ArticlesListPresenterC", "Article"]
+- ["7NewsApp21ArticlesListPresenterC", "ArticlesListCellProtocol"]
+- ["7NewsApp21ArticlesListPresenterC", "ArticlesListInteractor"]
+- ["7NewsApp21ArticlesListPresenterC", "ArticlesListViewProtocol"]
+- ["7NewsApp21ArticlesListPresenterC", "ArticlesListWireframe"]
+- !private ["7NewsApp21ArticlesListPresenterC", "Calendar"]
+- ["7NewsApp21ArticlesListPresenterC", "Date"]
+- ["7NewsApp21ArticlesListPresenterC", "DateFormatter"]
+- ["7NewsApp21ArticlesListPresenterC", "IndexPath"]
+- ["7NewsApp21ArticlesListPresenterC", "Int"]
+- ["7NewsApp21ArticlesListPresenterC", "String"]
+- ["7NewsApp21ArticlesListPresenterC", "UIViewController"]
+- ["7NewsApp21ArticlesListPresenterC", "article"]
+- ["7NewsApp21ArticlesListPresenterC", "articles"]
+- ["7NewsApp21ArticlesListPresenterC", "createIndex"]
+- ["7NewsApp21ArticlesListPresenterC", "dateformatter"]
+- ["7NewsApp21ArticlesListPresenterC", "deinit"]
+- ["7NewsApp21ArticlesListPresenterC", "didReceiveNewArticles"]
+- ["7NewsApp21ArticlesListPresenterC", "didSelectRow"]
+- ["7NewsApp21ArticlesListPresenterC", "fetchNewArticles"]
+- ["7NewsApp21ArticlesListPresenterC", "init"]
+- ["7NewsApp21ArticlesListPresenterC", "interactor"]
+- ["7NewsApp21ArticlesListPresenterC", "makeHashTable"]
+- ["7NewsApp21ArticlesListPresenterC", "numberOfRows"]
+- ["7NewsApp21ArticlesListPresenterC", "numberOfSections"]
+- ["7NewsApp21ArticlesListPresenterC", "present"]
+- ["7NewsApp21ArticlesListPresenterC", "pushControllerFromPreview"]
+- ["7NewsApp21ArticlesListPresenterC", "sectionDateFormatter"]
+- ["7NewsApp21ArticlesListPresenterC", "title"]
+- ["7NewsApp21ArticlesListPresenterC", "titleIndexes"]
+- !private ["7NewsApp21ArticlesListPresenterC", "titleIndexes.storage"]
+- ["7NewsApp21ArticlesListPresenterC", "view"]
+- ["7NewsApp21ArticlesListPresenterC", "viewControllerForPreview"]
+- ["7NewsApp21ArticlesListPresenterC", "wireframe"]
+- !private ["7NewsApp24ArticlesListViewProtocolP", "reloadData"]
+- !private ["7NewsApp21ArticlesListWireframeC", "pushControllerFromPreview"]
+- !private ["7NewsApp21ArticlesListWireframeC", "showArticleDetails"]
+- !private ["7NewsApp21ArticlesListWireframeC", "viewControllerForPreview"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "row"]
+- !private ["s23BidirectionalCollectionP", "section"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "dateStyle"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "keys"]
+- !private ["s7CVarArgP", "pushControllerFromPreview"]
+- !private ["s7CVarArgP", "showArticleDetails"]
+- !private ["s7CVarArgP", "string"]
+- !private ["s7CVarArgP", "subscript"]
+- ["s7CVarArgP", "timeStyle"]
+- !private ["s7CVarArgP", "updateValue"]
+- !private ["s7CVarArgP", "viewControllerForPreview"]
+- !private ["10Foundation8CalendarV", "current"]
+- !private ["10Foundation8CalendarV", "date"]
+- !private ["10Foundation8CalendarV", "dateComponents"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "keys"]
+- !private ["s10CollectionP", "row"]
+- !private ["s10CollectionP", "section"]
+- !private ["s10CollectionP", "sorted"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "updateValue"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "row"]
+- !private ["s10ComparableP", "section"]
+- !private ["10Foundation8CalendarV9ComponentO", "day"]
+- !private ["10Foundation8CalendarV9ComponentO", "month"]
+- !private ["10Foundation8CalendarV9ComponentO", "year"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dateComponents"]
+- ["s28CustomDebugStringConvertibleP", "dateStyle"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "keys"]
+- !private ["s28CustomDebugStringConvertibleP", "pushControllerFromPreview"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "section"]
+- !private ["s28CustomDebugStringConvertibleP", "showArticleDetails"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "timeStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "updateValue"]
+- !private ["s28CustomDebugStringConvertibleP", "viewControllerForPreview"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "date"]
+- !private ["s17CustomReflectableP", "dateComponents"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "keys"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "section"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "updateValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dateComponents"]
+- ["s23CustomStringConvertibleP", "dateStyle"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "keys"]
+- !private ["s23CustomStringConvertibleP", "pushControllerFromPreview"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "section"]
+- !private ["s23CustomStringConvertibleP", "showArticleDetails"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["s23CustomStringConvertibleP", "timeStyle"]
+- !private ["s23CustomStringConvertibleP", "updateValue"]
+- !private ["s23CustomStringConvertibleP", "viewControllerForPreview"]
+- ["So13DateFormatterC", "dateStyle"]
+- ["So13DateFormatterC", "init"]
+- !private ["So13DateFormatterC", "string"]
+- ["So13DateFormatterC", "timeStyle"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "current"]
+- !private ["s9DecodableP", "date"]
+- !private ["s9DecodableP", "dateComponents"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "keys"]
+- !private ["s9DecodableP", "row"]
+- !private ["s9DecodableP", "section"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "title"]
+- !private ["s9DecodableP", "updateValue"]
+- !private ["s10DictionaryV", "keys"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s10DictionaryV", "updateValue"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "current"]
+- !private ["s9EncodableP", "date"]
+- !private ["s9EncodableP", "dateComponents"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "keys"]
+- !private ["s9EncodableP", "row"]
+- !private ["s9EncodableP", "section"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "title"]
+- !private ["s9EncodableP", "updateValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "date"]
+- !private ["s9EquatableP", "dateComponents"]
+- ["s9EquatableP", "dateStyle"]
+- !private ["s9EquatableP", "day"]
+- ["s9EquatableP", "full"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "keys"]
+- !private ["s9EquatableP", "month"]
+- !private ["s9EquatableP", "pushControllerFromPreview"]
+- !private ["s9EquatableP", "row"]
+- !private ["s9EquatableP", "section"]
+- ["s9EquatableP", "short"]
+- !private ["s9EquatableP", "showArticleDetails"]
+- !private ["s9EquatableP", "sorted"]
+- !private ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "subscript"]
+- ["s9EquatableP", "timeStyle"]
+- !private ["s9EquatableP", "updateValue"]
+- !private ["s9EquatableP", "viewControllerForPreview"]
+- !private ["s9EquatableP", "year"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "section"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "keys"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "updateValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["So9FormatterC", "dateStyle"]
+- ["So9FormatterC", "init"]
+- !private ["So9FormatterC", "string"]
+- ["So9FormatterC", "timeStyle"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "date"]
+- !private ["s8HashableP", "dateComponents"]
+- ["s8HashableP", "dateStyle"]
+- !private ["s8HashableP", "day"]
+- ["s8HashableP", "full"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "month"]
+- !private ["s8HashableP", "pushControllerFromPreview"]
+- !private ["s8HashableP", "row"]
+- !private ["s8HashableP", "section"]
+- ["s8HashableP", "short"]
+- !private ["s8HashableP", "showArticleDetails"]
+- !private ["s8HashableP", "string"]
+- ["s8HashableP", "timeStyle"]
+- !private ["s8HashableP", "viewControllerForPreview"]
+- !private ["s8HashableP", "year"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["10Foundation9IndexPathV", "section"]
+- !private ["s10DictionaryV4KeysV", "sorted"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "row"]
+- !private ["s17MutableCollectionP", "section"]
+- !private ["s17MutableCollectionP", "subscript"]
+- ["So8NSCodingP", "dateStyle"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "string"]
+- ["So8NSCodingP", "timeStyle"]
+- ["So9NSCopyingP", "dateStyle"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "string"]
+- ["So9NSCopyingP", "timeStyle"]
+- ["So8NSObjectC", "dateStyle"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "pushControllerFromPreview"]
+- !private ["So8NSObjectC", "showArticleDetails"]
+- !private ["So8NSObjectC", "string"]
+- ["So8NSObjectC", "timeStyle"]
+- !private ["So8NSObjectC", "viewControllerForPreview"]
+- ["So16NSObjectProtocolP", "dateStyle"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "pushControllerFromPreview"]
+- !private ["So16NSObjectProtocolP", "showArticleDetails"]
+- !private ["So16NSObjectProtocolP", "string"]
+- ["So16NSObjectProtocolP", "timeStyle"]
+- !private ["So16NSObjectProtocolP", "viewControllerForPreview"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "row"]
+- !private ["s22RandomAccessCollectionP", "section"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- ["s16RawRepresentableP", "full"]
+- ["s16RawRepresentableP", "short"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "date"]
+- !private ["10Foundation20ReferenceConvertibleP", "dateComponents"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["10Foundation20ReferenceConvertibleP", "section"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "keys"]
+- !private ["s8SequenceP", "row"]
+- !private ["s8SequenceP", "section"]
+- !private ["s8SequenceP", "sorted"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "updateValue"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- ["So13DateFormatterC5StyleO", "full"]
+- ["So13DateFormatterC5StyleO", "short"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "dateStyle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pushControllerFromPreview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showArticleDetails"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "timeStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllerForPreview"]
+- !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["10Foundation14_MutableBoxingP", "date"]
+- !private ["10Foundation14_MutableBoxingP", "dateComponents"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "date"]
+- !private ["s21_ObjectiveCBridgeableP", "dateComponents"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "keys"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "section"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "updateValue"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "7NewsApp7ArticleC"
+- !private "7NewsApp24ArticlesListCellProtocolP"
+- !private "7NewsApp22ArticlesListInteractorC"
+- "7NewsApp21ArticlesListPresenterC"
+- !private "7NewsApp24ArticlesListViewProtocolP"
+- !private "7NewsApp21ArticlesListWireframeC"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "10Foundation8CalendarV"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "10Foundation8CalendarV9ComponentO"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "So13DateFormatterC"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "So9FormatterC"
+- "s8HashableP"
+- !private "10Foundation9IndexPathV"
+- !private "s10DictionaryV4KeysV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- "So13DateFormatterC5StyleO"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "64645f38a536b8bb8e00731a5d4add76"

@@ -1,0 +1,303 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AlamofireNotifications"
+provides-nominal:
+- "9Alamofire0A13NotificationsC"
+provides-member:
+- ["So14NSNotificationC4NameV", ""]
+- ["10Foundation12NotificationV", ""]
+- ["So18NotificationCenterC", ""]
+- ["SS", ""]
+- ["9Alamofire0A13NotificationsC", ""]
+- ["So14NSNotificationC4NameV", "afDidResume"]
+- ["So14NSNotificationC4NameV", "afDidSuspend"]
+- ["So14NSNotificationC4NameV", "afDidCancel"]
+- ["So14NSNotificationC4NameV", "afDidComplete"]
+- ["10Foundation12NotificationV", "afRequest"]
+- ["10Foundation12NotificationV", "init"]
+- ["So18NotificationCenterC", "postNotification"]
+- ["SS", "afRequestKey"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AlamofireNotifications"
+- "CastingPrecedence"
+- !private "Dictionary"
+- "Error"
+- "EventMonitor"
+- "Notification"
+- "NotificationCenter"
+- "Request"
+- "String"
+- "StringLiteralType"
+- "URLSessionTask"
+depends-member:
+- ["9Alamofire0A13NotificationsC", "Error"]
+- !private ["9Alamofire0A13NotificationsC", "NotificationCenter"]
+- ["9Alamofire0A13NotificationsC", "Request"]
+- ["9Alamofire0A13NotificationsC", "URLSessionTask"]
+- ["9Alamofire0A13NotificationsC", "deinit"]
+- ["9Alamofire0A13NotificationsC", "init"]
+- ["9Alamofire0A13NotificationsC", "queue"]
+- ["9Alamofire0A13NotificationsC", "request"]
+- ["9Alamofire0A13NotificationsC", "requestDidCancel"]
+- ["9Alamofire0A13NotificationsC", "requestDidFinish"]
+- ["9Alamofire0A13NotificationsC", "requestDidResume"]
+- ["9Alamofire0A13NotificationsC", "requestDidSuspend"]
+- ["9Alamofire0A13NotificationsC", "requestIsRetrying"]
+- ["9Alamofire0A13NotificationsC", "urlSession"]
+- !private ["s23BidirectionalCollectionP", "afRequestKey"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s7CVarArgP", "Notification"]
+- !private ["s7CVarArgP", "afRequestKey"]
+- !private ["s7CVarArgP", "default"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "post"]
+- !private ["s7CVarArgP", "postNotification"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "afRequestKey"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "afRequestKey"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "Notification"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "afRequestKey"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "post"]
+- !private ["s28CustomDebugStringConvertibleP", "postNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "userInfo"]
+- !private ["s29CustomPlaygroundQuickLookableP", "afRequestKey"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "Name"]
+- !private ["s17CustomReflectableP", "String"]
+- !private ["s17CustomReflectableP", "afRequestKey"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "userInfo"]
+- ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "Notification"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "afRequestKey"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "post"]
+- !private ["s23CustomStringConvertibleP", "postNotification"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["s9DecodableP", "afRequestKey"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "afRequestKey"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- ["s9EquatableP", "Name"]
+- ["s9EquatableP", "Notification"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "afDidCancel"]
+- !private ["s9EquatableP", "afDidComplete"]
+- !private ["s9EquatableP", "afDidResume"]
+- !private ["s9EquatableP", "afDidSuspend"]
+- !private ["s9EquatableP", "afRequestKey"]
+- !private ["s9EquatableP", "default"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "post"]
+- !private ["s9EquatableP", "postNotification"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "userInfo"]
+- !private ["9Alamofire12EventMonitorP", "NotificationCenter"]
+- ["9Alamofire12EventMonitorP", ""]
+- ["9Alamofire12EventMonitorP", "queue"]
+- ["9Alamofire12EventMonitorP", "request"]
+- ["9Alamofire12EventMonitorP", "requestDidCancel"]
+- ["9Alamofire12EventMonitorP", "requestDidFinish"]
+- ["9Alamofire12EventMonitorP", "requestDidResume"]
+- ["9Alamofire12EventMonitorP", "requestDidSuspend"]
+- ["9Alamofire12EventMonitorP", "requestIsRetrying"]
+- ["9Alamofire12EventMonitorP", "urlSession"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "afRequestKey"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "afRequestKey"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "afRequestKey"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "Name"]
+- ["s8HashableP", "Notification"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "afDidCancel"]
+- !private ["s8HashableP", "afDidComplete"]
+- !private ["s8HashableP", "afDidResume"]
+- !private ["s8HashableP", "afDidSuspend"]
+- !private ["s8HashableP", "afRequestKey"]
+- !private ["s8HashableP", "default"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "post"]
+- !private ["s8HashableP", "postNotification"]
+- !private ["s8HashableP", "userInfo"]
+- !private ["s25LosslessStringConvertibleP", "afRequestKey"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "afRequestKey"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSObjectC", "Notification"]
+- ["So8NSObjectC", "Request"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "post"]
+- ["So8NSObjectC", "postNotification"]
+- !private ["So16NSObjectProtocolP", "Notification"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "post"]
+- !private ["So16NSObjectProtocolP", "postNotification"]
+- ["So14NSNotificationC4NameV", "Notification"]
+- ["So14NSNotificationC4NameV", "afDidCancel"]
+- ["So14NSNotificationC4NameV", "afDidComplete"]
+- ["So14NSNotificationC4NameV", "afDidResume"]
+- ["So14NSNotificationC4NameV", "afDidSuspend"]
+- ["So14NSNotificationC4NameV", "init"]
+- ["10Foundation12NotificationV", "Name"]
+- ["10Foundation12NotificationV", "Notification"]
+- ["10Foundation12NotificationV", "Request"]
+- !private ["10Foundation12NotificationV", "String"]
+- ["10Foundation12NotificationV", "afRequest"]
+- ["10Foundation12NotificationV", "init"]
+- !private ["10Foundation12NotificationV", "userInfo"]
+- ["So18NotificationCenterC", "Notification"]
+- ["So18NotificationCenterC", "Request"]
+- !private ["So18NotificationCenterC", "default"]
+- !private ["So18NotificationCenterC", "post"]
+- ["So18NotificationCenterC", "postNotification"]
+- !private ["s26RangeReplaceableCollectionP", "afRequestKey"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "Notification"]
+- !private ["s16RawRepresentableP", "afDidCancel"]
+- !private ["s16RawRepresentableP", "afDidComplete"]
+- !private ["s16RawRepresentableP", "afDidResume"]
+- !private ["s16RawRepresentableP", "afDidSuspend"]
+- ["s16RawRepresentableP", "init"]
+- ["10Foundation20ReferenceConvertibleP", "Name"]
+- !private ["10Foundation20ReferenceConvertibleP", "String"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "userInfo"]
+- !private ["s8SequenceP", "afRequestKey"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- ["SS", "String"]
+- ["SS", "afRequestKey"]
+- ["SS", "init"]
+- !private ["s14StringProtocolP", "afRequestKey"]
+- ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "afRequestKey"]
+- ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "afRequestKey"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "afRequestKey"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "afRequestKey"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "afRequestKey"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "afRequestKey"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "afRequestKey"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "afRequestKey"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Notification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "postNotification"]
+- ["s21_ObjectiveCBridgeableP", "Name"]
+- ["s21_ObjectiveCBridgeableP", "Notification"]
+- !private ["s21_ObjectiveCBridgeableP", "String"]
+- !private ["s21_ObjectiveCBridgeableP", "afDidCancel"]
+- !private ["s21_ObjectiveCBridgeableP", "afDidComplete"]
+- !private ["s21_ObjectiveCBridgeableP", "afDidResume"]
+- !private ["s21_ObjectiveCBridgeableP", "afDidSuspend"]
+- !private ["s21_ObjectiveCBridgeableP", "afRequestKey"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "userInfo"]
+- ["s20_SwiftNewtypeWrapperP", "Notification"]
+- !private ["s20_SwiftNewtypeWrapperP", "afDidCancel"]
+- !private ["s20_SwiftNewtypeWrapperP", "afDidComplete"]
+- !private ["s20_SwiftNewtypeWrapperP", "afDidResume"]
+- !private ["s20_SwiftNewtypeWrapperP", "afDidSuspend"]
+- ["s20_SwiftNewtypeWrapperP", "init"]
+- !private ["s16_SwiftStringViewP", "afRequestKey"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "9Alamofire0A13NotificationsC"
+- "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- !private "s10DictionaryV"
+- "s9EncodableP"
+- "s9EquatableP"
+- "9Alamofire12EventMonitorP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- "So14NSNotificationC4NameV"
+- "10Foundation12NotificationV"
+- "So18NotificationCenterC"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "9Alamofire14URLConvertibleP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s20_SwiftNewtypeWrapperP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/pedrocontreras/Desktop/NewsApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/pedrocontreras/Desktop/NewsApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "5183a04167c2bea092c0c3c361e25906"
