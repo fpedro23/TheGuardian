@@ -57,6 +57,12 @@ class CoreDataStack {
 }
 
 extension CoreDataStack:PersistenceLayerProtocol {
+    
+    
+    /// Fetch article with a given ID
+    ///
+    /// - Parameter id: id of Article
+    /// - Returns: Article if found, Empty article if its not
     func fetchArticle(with id: String) -> Article {
         let request = NSFetchRequest<CoreDataArticle>(entityName: "CoreDataArticle")
         request.predicate = NSPredicate(format: "id = %@", id)
@@ -74,6 +80,10 @@ extension CoreDataStack:PersistenceLayerProtocol {
         }
     }
     
+    
+    /// Saves the given article to the current context
+    ///
+    /// - Parameter article: article to persist
     func persistArticle(_ article: Article) {
         let context = self.persistentContainer.viewContext
         if let coreDataArticle = NSEntityDescription.insertNewObject(forEntityName: "CoreDataArticle",into: context) as? CoreDataArticle {
@@ -89,6 +99,10 @@ extension CoreDataStack:PersistenceLayerProtocol {
         }
     }
     
+    
+    /// Lists all the existing articles in the database
+    ///
+    /// - Returns: Array of Articles
     func fetchArticles() -> [Article]{
         let request = NSFetchRequest<CoreDataArticle>(entityName: "CoreDataArticle")
         request.returnsObjectsAsFaults = false

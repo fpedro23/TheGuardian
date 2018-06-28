@@ -49,8 +49,6 @@ class ArticleDetailsWireframeTests: QuickSpec {
             it("Sets Interactor's presenter"){
                 expect(wireframe.presenter?.interactor?.presenter).toNot(beNil())
             }
-            
-
         }
     }
 }

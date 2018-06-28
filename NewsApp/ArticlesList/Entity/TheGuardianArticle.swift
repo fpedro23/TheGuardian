@@ -8,12 +8,19 @@
 
 import Foundation
 
+
+/// The Guardian Article
 class TheGuardianArticle:Codable, Article {
     var id:String
     var title:String
     var date:Date
     var content:String?
     
+    
+    /// Required initializer for creating instance from JSON
+    ///
+    /// - Parameter decoder: decoder
+    /// - Throws: exception if decoding error
     required init(from decoder:Decoder)  throws {
         let rawResponse = try RawServerResponse(from: decoder)
         self.id = rawResponse.id
@@ -29,6 +36,8 @@ class TheGuardianArticle:Codable, Article {
     }
 }
 
+
+/// Helper type to parse nested fields inside JSON
 fileprivate struct RawServerResponse: Decodable {
     
     var id: String

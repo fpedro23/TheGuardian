@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+
+/// Struct Containing the main view controllers of the application
 struct CoreViews{
     var articlesList: UIViewController?
 }

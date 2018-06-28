@@ -11,6 +11,11 @@ import CoreData
 
 
 public class CoreDataArticle: NSManagedObject {
+    
+    
+    /// Copies the content of the NSManagedObject to a POSO
+    ///
+    /// - Returns: POSO containing the information of the NSManagedObject
     func toPersistedArticle() -> PersistedArticle {
         let article = PersistedArticle(id: self.id ?? "",
                                        date: self.date as Date? ?? Date(),
@@ -18,4 +23,5 @@ public class CoreDataArticle: NSManagedObject {
                                        content: self.content ?? "")
         return article
     }
+    
 }
