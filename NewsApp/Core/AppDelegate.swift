@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         appBuilder.buildApp(window: self.window!)
         self.window?.isHidden = false
-        print(CoreDataStack().persistentContainer)
         return true
     }
 

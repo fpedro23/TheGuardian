@@ -15,7 +15,7 @@ class OfflineNetworkLayer:NetworkLayer {
     var articles:[Article] = []
     
     init(numberOfArticles:Int){
-        for i in 0...numberOfArticles {
+        for i in 0..<numberOfArticles {
             var components =  Calendar.current.dateComponents([.year,.day,.month], from: Date())
             components.day = components.day! - i
             let date = Calendar.current.date(from: components)!
@@ -28,7 +28,7 @@ class OfflineNetworkLayer:NetworkLayer {
     }
     
     func fetchArticles(for date:Date, completion:@escaping ArticleFetchResultBlock){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
                 completion(self.articles, "")
         }
     }

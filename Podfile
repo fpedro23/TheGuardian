@@ -9,9 +9,12 @@ target 'NewsApp' do
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5-core-rewrite'
 
   pod 'DZNEmptyDataSet'
+  
   target 'NewsAppTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
 
   target 'NewsAppUITests' do

@@ -19,7 +19,7 @@ class ArticleDetailsPresenter : ArticleDetailsPresenterProtocol {
         return formatter
     }()
     
-    func didReceiveArticleInformation(article:Article){
+    func didReceiveArticleInformation(article:Article, error:String){
         self.view?.setTitle(article.title)
         self.view?.setDate(dateformatter.string(from: article.date))
         self.view?.setBody(article.content ?? "")

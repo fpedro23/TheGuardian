@@ -49,12 +49,12 @@ class ArticleDetailsInteractor : ArticleDetailsInteractorProtocol {
     func fetchArticleDetails(completion: @escaping ArticleDetailsFetchResultBlock){
         guard let article = self.article else { return }
         if self.isReachable {
-            self.networkLayer.fetchDetailsFromArticle(article){ article in
+            self.networkLayer.fetchDetailsFromArticle(article){ article, error  in
                 self.didReceiveArticle(article: article)
-                completion(article)
+                completion(article, error)
             }
         }else{
-            completion(self.persistenceLayer?.fetchArticle(with: article.id) ?? PersistedArticle(id: "the id", date: Date(), title: "mE TRU", content: "cONTENT"))
+            completion(self.persistenceLayer?.fetchArticle(with: article.id) ?? PersistedArticle(id: "the id", date: Date(), title: "mE TRU", content: "cONTENT"), "")
         }
         
     }

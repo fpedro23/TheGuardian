@@ -13,9 +13,9 @@ import Alamofire
 class TheGuardianNetworkLayer:NetworkLayer {
     
     let apiKey =  "e9228a65-1c50-4cb2-80d8-3b19a630cde5"
-    let format = "json"
-    let query = "international"
-    let requestURL = "https://content.guardianapis.com/search"
+    var format = "json"
+    var query = "international"
+    var requestURL = "https://content.guardianapis.com/search"
     var parameters:Parameters { return ["api-key":self.apiKey,
                                       "format":self.format,
                                       "q":self.query,
