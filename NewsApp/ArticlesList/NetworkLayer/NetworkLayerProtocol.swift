@@ -16,12 +16,5 @@ protocol NetworkLayer {
 }
 
 protocol Reachable {
-    var onReachabilityChangedBlock:(()->Void)? { get set }
     func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus)
-}
-
-extension Reachable {
-    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus){
-        print(status)
-    }
 }

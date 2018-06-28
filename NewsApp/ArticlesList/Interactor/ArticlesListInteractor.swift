@@ -9,14 +9,14 @@
 import Foundation
 import Alamofire
 
-class ArticlesListInteractor {
+class ArticlesListInteractor:ArticlesListInteractorProtocol {
     var networkLayer:NetworkLayer
     var persistenceLayer:PersistenceLayerProtocol?
-    var presenter:ArticlesListPresenter?
+    var presenter:ArticlesListPresenterProtocol?
     var reachabilityManager = NetworkReachabilityManager()
     var isReachable = false
     
-    init(networkLayer:NetworkLayer) {
+    required init(networkLayer:NetworkLayer) {
         self.networkLayer = networkLayer
         //self.networkLayer.onReachabilityChangedBlock = reachabilityDidChange
         self.reachabilityManager?.listener = listener

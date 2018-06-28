@@ -8,9 +8,8 @@
 
 import Foundation
 
-class OfflineArticleDetailsNetworkLayer : ArticleDetailsNetworkLayerProtocol, Reachable {
+class OfflineArticleDetailsNetworkLayer : ArticleDetailsNetworkLayerProtocol {
     
-    var onReachabilityChangedBlock:(()->Void)?
     
     func fetchDetailsFromArticle(_ article: Article, completion: @escaping (Article) -> Void) {
         let newArticle = article

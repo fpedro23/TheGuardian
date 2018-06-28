@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class ArticlesListPresenter{
+class ArticlesListPresenter : ArticlesListPresenterProtocol{
     
     public var wireframe:ArticlesListWireframe?
-    var interactor:ArticlesListInteractor?
+    var interactor:ArticlesListInteractorProtocol?
     var view:ArticlesListViewProtocol?
     var articles:[Date:[Article]] = [:]
     lazy var titleIndexes: [Date] = {
