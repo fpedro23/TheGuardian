@@ -8,12 +8,11 @@
 
 import Foundation
 
-class OfflineNetworkLayer:NetworkLayer, Reachable {
+class OfflineNetworkLayer:NetworkLayer {
     
     let content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     
     var articles:[Article] = []
-    var onReachabilityChangedBlock:(()->Void)?
     
     init(numberOfArticles:Int){
         for i in 0...numberOfArticles {
@@ -22,7 +21,7 @@ class OfflineNetworkLayer:NetworkLayer, Reachable {
             let date = Calendar.current.date(from: components)!
             let article = PersistedArticle(date:date,
                                   title: "\(i) \(content)",
-                image: URL(fileURLWithPath: ""),
+                
                 content: content)
             articles.append(article)
         }

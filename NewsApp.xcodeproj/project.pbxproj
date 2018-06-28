@@ -45,6 +45,11 @@
 		899F315020E3B7A6009DF6F8 /* Monotype Sabon Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 899F314F20E3B7A6009DF6F8 /* Monotype Sabon Regular.otf */; };
 		89BF27A220E499500034C5A9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27A120E499500034C5A9 /* Article.swift */; };
 		89BF27A420E49A290034C5A9 /* PersistedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27A320E49A290034C5A9 /* PersistedArticle.swift */; };
+		89BF27A920E4A33E0034C5A9 /* TheGuardian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27A620E4A2710034C5A9 /* TheGuardian.xcdatamodeld */; };
+		89BF27AF20E4A3F90034C5A9 /* CoreDataArticle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27AE20E4A3F80034C5A9 /* CoreDataArticle+CoreDataProperties.swift */; };
+		89BF27B120E4A40C0034C5A9 /* CoreDataArticle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27B020E4A40B0034C5A9 /* CoreDataArticle+CoreDataClass.swift */; };
+		89BF27F020E4A4AD0034C5A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27EF20E4A4AD0034C5A9 /* CoreDataStack.swift */; };
+		89BF27F220E4A5E10034C5A9 /* PersistenceLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27F120E4A5E10034C5A9 /* PersistenceLayerProtocol.swift */; };
 		9D5355F9686B6810B896BFE4 /* Pods_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305ED03371FE88A89901667 /* Pods_NewsAppTests.framework */; };
 		F8A0409231DE19F79E1118A9 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439F3CC97C6DBF8F345C3A2A /* Pods_NewsApp.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +122,11 @@
 		899F314F20E3B7A6009DF6F8 /* Monotype Sabon Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monotype Sabon Regular.otf"; sourceTree = "<group>"; };
 		89BF27A120E499500034C5A9 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		89BF27A320E49A290034C5A9 /* PersistedArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedArticle.swift; sourceTree = "<group>"; };
+		89BF27A720E4A2710034C5A9 /* CoreDataArticle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataArticle.xcdatamodel; sourceTree = "<group>"; };
+		89BF27AE20E4A3F80034C5A9 /* CoreDataArticle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreDataArticle+CoreDataProperties.swift"; path = "/Users/pedrocontreras/Desktop/NewsApp/NewsApp/ArticlesList/Persistence/CoreDataArticle+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		89BF27B020E4A40B0034C5A9 /* CoreDataArticle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreDataArticle+CoreDataClass.swift"; path = "/Users/pedrocontreras/Desktop/NewsApp/NewsApp/ArticlesList/Persistence/CoreDataArticle+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		89BF27EF20E4A4AD0034C5A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		89BF27F120E4A5E10034C5A9 /* PersistenceLayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerProtocol.swift; sourceTree = "<group>"; };
 		B24098DB6455DFF9F36BF3E4 /* Pods_NewsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF656C3F1F6784E27143266D /* Pods-NewsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsAppTests/Pods-NewsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +241,7 @@
 		8930F85820E23F670024C1F9 /* ArticlesList */ = {
 			isa = PBXGroup;
 			children = (
+				89BF27A520E4A1C10034C5A9 /* Persistence */,
 				89BF27A020E4990C0034C5A9 /* Entity */,
 				8930F86720E247AC0024C1F9 /* Interactor */,
 				8930F86620E247A80024C1F9 /* Router */,
@@ -365,6 +376,18 @@
 				89BF27A320E49A290034C5A9 /* PersistedArticle.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		89BF27A520E4A1C10034C5A9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				89BF27AE20E4A3F80034C5A9 /* CoreDataArticle+CoreDataProperties.swift */,
+				89BF27B020E4A40B0034C5A9 /* CoreDataArticle+CoreDataClass.swift */,
+				89BF27A620E4A2710034C5A9 /* TheGuardian.xcdatamodeld */,
+				89BF27EF20E4A4AD0034C5A9 /* CoreDataStack.swift */,
+				89BF27F120E4A5E10034C5A9 /* PersistenceLayerProtocol.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,17 +616,22 @@
 				899AC67720E3725F00F6D949 /* OfflineArticleDetailsNetworkLayer.swift in Sources */,
 				899AC66420E35A4F00F6D949 /* ArticleDetailsViewProtocol.swift in Sources */,
 				89BF27A420E49A290034C5A9 /* PersistedArticle.swift in Sources */,
+				89BF27F020E4A4AD0034C5A9 /* CoreDataStack.swift in Sources */,
 				8930F82D20E23D500024C1F9 /* ViewController.swift in Sources */,
 				89087A5F20E2898F00DE8CD9 /* AppBuilder.swift in Sources */,
 				899AC66220E35A2000F6D949 /* ArticleDetailsWireframe.swift in Sources */,
+				89BF27F220E4A5E10034C5A9 /* PersistenceLayerProtocol.swift in Sources */,
 				899AC66F20E364CF00F6D949 /* TheGuardianArticleDetailsNetworkLayer.swift in Sources */,
 				899AC65920E292B300F6D949 /* ArticlesListTableViewCell.swift in Sources */,
 				8930F85A20E241140024C1F9 /* ArticlesListInteractor.swift in Sources */,
+				89BF27B120E4A40C0034C5A9 /* CoreDataArticle+CoreDataClass.swift in Sources */,
+				89BF27A920E4A33E0034C5A9 /* TheGuardian.xcdatamodeld in Sources */,
 				8930F86B20E248700024C1F9 /* ArticlesListViewProtocol.swift in Sources */,
 				899AC67120E364DD00F6D949 /* ArticleDetailsNetworkLayerProtocol.swift in Sources */,
 				899AC67420E3661B00F6D949 /* ArticleDetailsViewController.swift in Sources */,
 				899AC65020E28BB700F6D949 /* CoreViews.swift in Sources */,
 				8930F85D20E242E60024C1F9 /* NetworkLayerProtocol.swift in Sources */,
+				89BF27AF20E4A3F90034C5A9 /* CoreDataArticle+CoreDataProperties.swift in Sources */,
 				899AC66920E35B4B00F6D949 /* ArticleDetailsInteractorProtocol.swift in Sources */,
 				899AC65420E28F0200F6D949 /* ArticlesListWireframe.swift in Sources */,
 				899AC65220E28DC000F6D949 /* ArticlesListNavigator.swift in Sources */,
@@ -941,6 +969,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89BF27A620E4A2710034C5A9 /* TheGuardian.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89BF27A720E4A2710034C5A9 /* CoreDataArticle.xcdatamodel */,
+			);
+			currentVersion = 89BF27A720E4A2710034C5A9 /* CoreDataArticle.xcdatamodel */;
+			path = TheGuardian.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8930F81F20E23D500024C1F9 /* Project object */;
 }

@@ -12,9 +12,7 @@ protocol Article:class {
     var id:String {get set}
     var title:String { get set }
     var date:Date { get set }
-    var image:URL? { get set}
     var content:String? { get set}
-
 }
 
 

@@ -12,7 +12,6 @@ class TheGuardianArticle:Codable, Article {
     var id:String
     var title:String
     var date:Date
-    var image:URL?
     var content:String?
     
     required init(from decoder:Decoder)  throws {
@@ -27,7 +26,6 @@ class TheGuardianArticle:Codable, Article {
         case id = "id"
         case title = "webTitle"
         case date = "webPublicationDate"
-        case image
     }
 }
 

@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import Alamofire
 
-class TheGuardianNetworkLayer:NetworkLayer, Reachable {
+class TheGuardianNetworkLayer:NetworkLayer {
     
     let apiKey =  "e9228a65-1c50-4cb2-80d8-3b19a630cde5"
     let format = "json"
@@ -22,41 +22,32 @@ class TheGuardianNetworkLayer:NetworkLayer, Reachable {
                                       "page-size":20,
                                       "page":self.currentPage]
     }
-    var reachabilityManager = NetworkReachabilityManager()
-    var onReachabilityChangedBlock:(()->Void)?
     var currentPage:Int = 1
-    init(){
-        self.reachabilityManager?.listener = listener
-        self.reachabilityManager?.startListening()
-    }
-    
-    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus){
-        switch status {
-        case .reachable:
-            self.onReachabilityChangedBlock?()
-        default:
-            print(":(")
-        }
-    }
-    
     
     func fetchArticles(for date: Date, completion:@escaping ArticleFetchResultBlock) {
         Alamofire.request(requestURL, parameters:parameters).responseJSON{ response in
-            if response.result.isSuccess {
-                self.currentPage += 1
-                if let results = ((response.result.value as? NSDictionary)?.object(forKey: "response") as? NSDictionary)?.object(forKey: "results") as? NSArray {
-                    if let data = try? JSONSerialization.data(withJSONObject: results){
+            guard response.result.isSuccess else {
+                return  completion([], response.result.error.debugDescription)
+            }
+            
+            self.currentPage += 1
+            
+            guard let results = ((response.result.value as? NSDictionary)?.object(forKey: "response") as? NSDictionary)?.object(forKey: "results") as? NSArray else {
+                return  completion([], "Keys not found in dictionary")
+            }
+            
+            guard let data = try? JSONSerialization.data(withJSONObject: results) else {
+                return  completion([], "No valid JSON Data")
+            }
                         let jsonDecoder = JSONDecoder()
                         jsonDecoder.dateDecodingStrategy = .iso8601
-                        if let articles = try? jsonDecoder.decode([TheGuardianArticle].self, from: data) {
-                            DispatchQueue.main.async {
-                                completion(articles, "")
-                            }
-                        }
-                    }
-                }
-            }else {
-                completion([], response.result.error.debugDescription)
+            guard let articles = try? jsonDecoder.decode([TheGuardianArticle].self, from: data) else {
+                return  completion([], "Could not serialize json to model")
+
+            }
+            
+            DispatchQueue.main.async {
+                completion(articles, "")
             }
         }
     }

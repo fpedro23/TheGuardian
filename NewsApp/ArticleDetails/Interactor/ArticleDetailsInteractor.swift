@@ -7,27 +7,56 @@
 //
 
 import Foundation
+import Alamofire
 
 class ArticleDetailsInteractor : ArticleDetailsInteractorProtocol {
     
     var article: Article?
-    var networkLayer:ArticleDetailsNetworkLayerProtocol & Reachable
+    var networkLayer:ArticleDetailsNetworkLayerProtocol
     var presenter: ArticleDetailsPresenterProtocol?
-    
-    required init(networkLayer: ArticleDetailsNetworkLayerProtocol & Reachable) {
+    var persistenceLayer:PersistenceLayerProtocol?
+    var reachabilityManager = NetworkReachabilityManager()
+    var isReachable = false
+
+    required init(networkLayer: ArticleDetailsNetworkLayerProtocol) {
         self.networkLayer = networkLayer
-        self.networkLayer.onReachabilityChangedBlock = reachabilityDidChange
+        self.reachabilityManager?.listener = listener
+        self.reachabilityManager?.startListening()
+        self.isReachable = self.reachabilityManager?.isReachable ?? false
+    }
+    
+    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus){
+        switch status {
+        case .reachable:
+            if self.isReachable { return }
+            self.isReachable = true
+            self.reachabilityDidChange()
+        default:
+            self.isReachable = false
+            print("Status did change :\(status)")
+        }
     }
     
     func reachabilityDidChange(){
-        guard let article = self.article else { return }
         guard let presenter = self.presenter else { return }
-        self.networkLayer.fetchDetailsFromArticle(article, completion: presenter.didReceiveArticleInformation)
+        self.fetchArticleDetails(completion: presenter.didReceiveArticleInformation)
+    }
+    
+    func didReceiveArticle(article:Article){
+        self.persistenceLayer?.persistArticle(article)
     }
     
     func fetchArticleDetails(completion: @escaping ArticleDetailsFetchResultBlock){
         guard let article = self.article else { return }
-        self.networkLayer.fetchDetailsFromArticle(article, completion: completion)
+        if self.isReachable {
+            self.networkLayer.fetchDetailsFromArticle(article){ article in
+                self.didReceiveArticle(article: article)
+                completion(article)
+            }
+        }else{
+            completion(self.persistenceLayer?.fetchArticle(with: article.id) ?? PersistedArticle(id: "the id", date: Date(), title: "mE TRU", content: "cONTENT"))
+        }
+        
     }
     
 }

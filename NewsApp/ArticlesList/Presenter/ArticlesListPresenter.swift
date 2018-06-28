@@ -59,28 +59,44 @@ class ArticlesListPresenter{
     
     func article(at indexPath:IndexPath) -> Article {
         let date  = titleIndexes[indexPath.section]
-        return self.articles[date]?[indexPath.row] ?? PersistedArticle(title: "Error 🚨", image: nil, content: nil)
+        return self.articles[date]?[indexPath.row] ?? PersistedArticle(title: "Error 🚨", content: "nil")
         
     }
     
-    func didReceiveNewArticles(articles:[Article], error:String){
+    func didReceiveNewArticles(articles:[Article], error:String, replace:Bool = true){
         self.isLoadingData = false
         if !error.isEmpty{
             return
         }
-        self.articles = makeHashTable(from: articles)
+        let newArticles = makeHashTable(from: articles)
+        
+        if (self.articles as NSDictionary).isEqual(to: newArticles as [AnyHashable : Any]) {
+            return
+        }
+        
+        self.articles = makeHashTable(from: articles, replace: replace)
         self.titleIndexes = self.createIndex()
         self.view?.reloadData()
     }
     
-    func makeHashTable(from articles:[Article]) -> [Date: [Article]] {
-        var hashTable: [Date: [Article]] = self.articles
+    func makeHashTable(from articles:[Article], replace:Bool = false) -> [Date: [Article]] {
+        var hashTable: [Date: [Article]]
+        if replace {
+            hashTable = [:]
+        }else{
+            hashTable = self.articles
+        }
+        
         for article in articles {
             let components =  Calendar.current.dateComponents([.year,.day,.month], from: article.date)
             
             let key = Calendar.current.date(from: components)!
             
             if var currentArticles = hashTable[key] {
+                
+                if currentArticles.contains(where: {return $0.id == article.id }){
+                    continue
+                }
                 currentArticles.append(article)
                 hashTable.updateValue(currentArticles, forKey: key)
             } else {
@@ -96,10 +112,12 @@ class ArticlesListPresenter{
         self.wireframe?.showArticleDetails(article)
     }
     
-    func fetchNewArticles(for date:Date){
+    func fetchNewArticles(for date:Date, replace:Bool = true){
         if isLoadingData { return }
         self.isLoadingData = true
-        self.interactor?.fetchArticles(for: date, completion: didReceiveNewArticles)
+        self.interactor?.fetchArticles(for: date){ articles, error in
+            self.didReceiveNewArticles(articles: articles, error: error, replace: replace)
+        }
     }
     
     func viewControllerForPreview(at indexPath:IndexPath) -> UIViewController? {
@@ -112,7 +130,7 @@ class ArticlesListPresenter{
     }
     
     func tableViewDidReachBottom(){
-        fetchNewArticles(for: self.titleIndexes.first ?? Date())
+        fetchNewArticles(for: self.titleIndexes.first ?? Date(), replace: false)
     }
     
 }

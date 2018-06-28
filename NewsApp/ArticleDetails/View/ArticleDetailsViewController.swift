@@ -24,13 +24,14 @@ class ArticleDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.eventHandler?.fetchArticleDetails()
-        self.bodyView.scrollView.isScrollEnabled = false
-        self.bodyView.navigationDelegate = self
-        self.bodyView.isUserInteractionEnabled = false
         self.setBody("")
         self.setTitle("")
         self.setDate("")
+        self.eventHandler?.fetchArticleDetails()
+        self.bodyView.scrollView.isScrollEnabled = false
+        self.bodyView.navigationDelegate = self
+        //self.bodyView.removeGestureRecognizer(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
+
     }
 
     override func didReceiveMemoryWarning() {

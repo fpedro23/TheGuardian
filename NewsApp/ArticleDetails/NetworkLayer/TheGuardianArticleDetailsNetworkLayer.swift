@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class TheGuardianArticleDetailsNetworkLayer : ArticleDetailsNetworkLayerProtocol, Reachable {
+class TheGuardianArticleDetailsNetworkLayer : ArticleDetailsNetworkLayerProtocol {
 
     var onReachabilityChangedBlock:(()->Void)? 
     let apiKey =  "e9228a65-1c50-4cb2-80d8-3b19a630cde5"
@@ -21,15 +21,27 @@ class TheGuardianArticleDetailsNetworkLayer : ArticleDetailsNetworkLayerProtocol
                                       "show-fields":"body"
     ]
     
-    
-    
+
     func fetchDetailsFromArticle(_ article: Article, completion: @escaping (Article) -> Void) {
         Alamofire.request(requestURL + article.id, parameters:parameters).responseJSON{ response in
-            let results = ((response.result.value as! NSDictionary).object(forKey: "response") as! NSDictionary).object(forKey: "content") as! NSDictionary
+            guard response.result.isSuccess else {
+                return
+            }
+            
+            guard let results = ((response.result.value as? NSDictionary)?.object(forKey: "response") as? NSDictionary)?.object(forKey: "content") as? NSDictionary else { return
+            }
+            
+            guard let data = try? JSONSerialization.data(withJSONObject: results) else {
+                return
+            }
+            
             let jsonDecoder = JSONDecoder()
-            let data = try! JSONSerialization.data(withJSONObject: results)
             jsonDecoder.dateDecodingStrategy = .iso8601
-            let articles = try! jsonDecoder.decode(TheGuardianArticle.self, from: data)
+
+            guard let articles = try? jsonDecoder.decode(TheGuardianArticle.self, from: data) else {
+                return
+            }
+            
             DispatchQueue.main.async {
                 completion(articles)
             }

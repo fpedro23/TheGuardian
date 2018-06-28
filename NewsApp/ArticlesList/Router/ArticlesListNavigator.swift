@@ -20,6 +20,7 @@ class ArticlesListNavigator {
     func setupArticlesListModule(){
         //articlesListWireframe
         let interactor = ArticlesListInteractor(networkLayer: TheGuardianNetworkLayer())
+        interactor.persistenceLayer = CoreDataStack()
         let presenter = ArticlesListPresenter()
         presenter.view = articlesListView
         presenter.interactor = interactor

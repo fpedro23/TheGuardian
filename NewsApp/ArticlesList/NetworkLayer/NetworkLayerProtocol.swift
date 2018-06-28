@@ -7,15 +7,21 @@
 //
 
 import Foundation
-
+import Alamofire
 
 typealias ArticleFetchResultBlock = (([Article],String)->Void)
 
 protocol NetworkLayer {
-    
     func fetchArticles(for date:Date, completion:@escaping ArticleFetchResultBlock)
 }
 
 protocol Reachable {
-    var onReachabilityChangedBlock:(()->Void)? { get set}
+    var onReachabilityChangedBlock:(()->Void)? { get set }
+    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus)
+}
+
+extension Reachable {
+    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus){
+        print(status)
+    }
 }

@@ -18,6 +18,7 @@ class ArticleDetailsWireframe {
     
     func mainViewController(article:Article) -> UIViewController{
         var interactor = interactorType.init(networkLayer: TheGuardianArticleDetailsNetworkLayer())
+        interactor.persistenceLayer = CoreDataStack()
         let view = self.createNewArticleDetailsView()
         let presenter = ArticleDetailsPresenter()
         presenter.interactor = interactor
