@@ -10,7 +10,7 @@ import Foundation
 
 protocol ArticleDetailsInteractorProtocol {
     
-    init(networkLayer:ArticleDetailsNetworkLayerProtocol)
+    init(networkLayer:ArticleDetailsNetworkLayerProtocol & Reachable)
     var presenter: ArticleDetailsPresenterProtocol? { get set }
     var article: Article? { get set }
     

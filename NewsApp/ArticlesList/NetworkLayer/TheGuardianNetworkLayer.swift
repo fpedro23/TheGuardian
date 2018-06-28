@@ -8,28 +8,55 @@
 
 import Foundation
 import Alamofire
+import Alamofire
 
-class TheGuardianNetworkLayer:NetworkLayer {
+class TheGuardianNetworkLayer:NetworkLayer, Reachable {
     
     let apiKey =  "e9228a65-1c50-4cb2-80d8-3b19a630cde5"
     let format = "json"
     let query = "international"
     let requestURL = "https://content.guardianapis.com/search"
-    lazy var parameters:Parameters = ["api-key":self.apiKey,
+    var parameters:Parameters { return ["api-key":self.apiKey,
                                       "format":self.format,
-                                      "q":self.query
-                                      ]
+                                      "q":self.query,
+                                      "page-size":20,
+                                      "page":self.currentPage]
+    }
+    var reachabilityManager = NetworkReachabilityManager()
+    var onReachabilityChangedBlock:(()->Void)?
+    var currentPage:Int = 1
+    init(){
+        self.reachabilityManager?.listener = listener
+        self.reachabilityManager?.startListening()
+    }
+    
+    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus){
+        switch status {
+        case .reachable:
+            self.onReachabilityChangedBlock?()
+        default:
+            print(":(")
+        }
+    }
     
     
     func fetchArticles(for date: Date, completion:@escaping ArticleFetchResultBlock) {
         Alamofire.request(requestURL, parameters:parameters).responseJSON{ response in
-            let results = ((response.result.value as! NSDictionary).object(forKey: "response") as! NSDictionary).object(forKey: "results") as! NSArray
-            let jsonDecoder = JSONDecoder()
-            let data = try! JSONSerialization.data(withJSONObject: results)
-            jsonDecoder.dateDecodingStrategy = .iso8601
-            let articles = try! jsonDecoder.decode([Article].self, from: data)
-            DispatchQueue.main.async {
-                completion(articles)
+            if response.result.isSuccess {
+                self.currentPage += 1
+                if let results = ((response.result.value as? NSDictionary)?.object(forKey: "response") as? NSDictionary)?.object(forKey: "results") as? NSArray {
+                    if let data = try? JSONSerialization.data(withJSONObject: results){
+                        let jsonDecoder = JSONDecoder()
+                        jsonDecoder.dateDecodingStrategy = .iso8601
+                        if let articles = try? jsonDecoder.decode([TheGuardianArticle].self, from: data) {
+                            DispatchQueue.main.async {
+                                completion(articles, "")
+                            }
+                        }
+                    }
+                }
+            }else {
+                completion([], response.result.error.debugDescription)
             }
         }
     }

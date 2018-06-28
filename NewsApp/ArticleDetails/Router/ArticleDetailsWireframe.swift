@@ -17,7 +17,7 @@ class ArticleDetailsWireframe {
 
     
     func mainViewController(article:Article) -> UIViewController{
-        var interactor = interactorType.init(networkLayer: OfflineArticleDetailsNetworkLayer())
+        var interactor = interactorType.init(networkLayer: TheGuardianArticleDetailsNetworkLayer())
         let view = self.createNewArticleDetailsView()
         let presenter = ArticleDetailsPresenter()
         presenter.interactor = interactor

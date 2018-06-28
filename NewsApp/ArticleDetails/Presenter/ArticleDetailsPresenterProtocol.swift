@@ -10,4 +10,5 @@ import Foundation
 
 protocol ArticleDetailsPresenterProtocol:class {
     func fetchArticleDetails()
+    func didReceiveArticleInformation(article:Article)
 }

@@ -10,11 +10,18 @@ import Foundation
 
 
 class ArticlesListInteractor {
-    var networkLayer:NetworkLayer
+    var networkLayer:NetworkLayer & Reachable
     var presenter:ArticlesListPresenter?
     
-    init(networkLayer:NetworkLayer) {
+    init(networkLayer:NetworkLayer & Reachable) {
         self.networkLayer = networkLayer
+        self.networkLayer.onReachabilityChangedBlock = reachabilityDidChange
+    }
+    
+    func reachabilityDidChange(){
+        if let presenter = self.presenter {
+            self.fetchArticles(for: Date(), completion: presenter.didReceiveNewArticles)
+        }
     }
     
     func fetchArticles(for date:Date, completion:@escaping ArticleFetchResultBlock){

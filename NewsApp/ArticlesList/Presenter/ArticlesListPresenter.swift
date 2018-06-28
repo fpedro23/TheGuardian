@@ -18,6 +18,7 @@ class ArticlesListPresenter{
     lazy var titleIndexes: [Date] = {
         return self.createIndex()
     }()
+    var isLoadingData = false
     
     let dateformatter:DateFormatter = {
         let formatter = DateFormatter()
@@ -58,18 +59,22 @@ class ArticlesListPresenter{
     
     func article(at indexPath:IndexPath) -> Article {
         let date  = titleIndexes[indexPath.section]
-        return self.articles[date]?[indexPath.row] ?? Article(title: "Error 🚨", image: nil, content: nil)
+        return self.articles[date]?[indexPath.row] ?? PersistedArticle(title: "Error 🚨", image: nil, content: nil)
         
     }
     
-    func didReceiveNewArticles(articles:[Article]){
+    func didReceiveNewArticles(articles:[Article], error:String){
+        self.isLoadingData = false
+        if !error.isEmpty{
+            return
+        }
         self.articles = makeHashTable(from: articles)
         self.titleIndexes = self.createIndex()
         self.view?.reloadData()
     }
     
     func makeHashTable(from articles:[Article]) -> [Date: [Article]] {
-        var hashTable: [Date: [Article]] = [:]
+        var hashTable: [Date: [Article]] = self.articles
         for article in articles {
             let components =  Calendar.current.dateComponents([.year,.day,.month], from: article.date)
             
@@ -92,6 +97,8 @@ class ArticlesListPresenter{
     }
     
     func fetchNewArticles(for date:Date){
+        if isLoadingData { return }
+        self.isLoadingData = true
         self.interactor?.fetchArticles(for: date, completion: didReceiveNewArticles)
     }
     
@@ -102,6 +109,10 @@ class ArticlesListPresenter{
     
     func pushControllerFromPreview(_ controller:UIViewController){
         self.wireframe?.pushControllerFromPreview(controller)
+    }
+    
+    func tableViewDidReachBottom(){
+        fetchNewArticles(for: self.titleIndexes.first ?? Date())
     }
     
 }

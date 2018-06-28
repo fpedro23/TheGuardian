@@ -10,10 +10,14 @@
 p
 {
     font-family: "Avenir Next";
-    font-size: 50px;
+    font-size: 300%;
     font-weight: normal;
 }
 
+* {
+    font-size: 100%;
+    font-family: "Avenir Next";
+}
 
 
 

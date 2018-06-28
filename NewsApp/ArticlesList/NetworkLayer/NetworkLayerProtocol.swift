@@ -9,8 +9,13 @@
 import Foundation
 
 
-typealias ArticleFetchResultBlock = (([Article])->Void)
+typealias ArticleFetchResultBlock = (([Article],String)->Void)
 
 protocol NetworkLayer {
+    
     func fetchArticles(for date:Date, completion:@escaping ArticleFetchResultBlock)
+}
+
+protocol Reachable {
+    var onReachabilityChangedBlock:(()->Void)? { get set}
 }

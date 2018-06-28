@@ -27,6 +27,10 @@ class ArticleDetailsViewController: UIViewController {
         self.eventHandler?.fetchArticleDetails()
         self.bodyView.scrollView.isScrollEnabled = false
         self.bodyView.navigationDelegate = self
+        self.bodyView.isUserInteractionEnabled = false
+        self.setBody("")
+        self.setTitle("")
+        self.setDate("")
     }
 
     override func didReceiveMemoryWarning() {

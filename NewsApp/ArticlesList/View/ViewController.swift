@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
 class ViewController: UIViewController {
+    
+    let threshold:CGFloat = 100.0 // threshold from bottom of tableView
     var eventHandler: ArticlesListPresenter?
     @IBOutlet weak var tableView: UITableView!
     
@@ -38,12 +41,14 @@ class ViewController: UIViewController {
     }
 
     func setupTableView(){
+        self.tableView.emptyDataSetSource = self
+        self.tableView.emptyDataSetDelegate = self
+        self.tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ArticlesListTableViewCell", bundle: nil), forCellReuseIdentifier: "articlesListTableViewCell")
 
     }
-
 }
 
 
@@ -105,3 +110,21 @@ extension ViewController:UIViewControllerPreviewingDelegate {
         self.eventHandler?.pushControllerFromPreview(viewControllerToCommit)
     }
 }
+
+extension ViewController:DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string:  "Loading")
+    }
+}
+
+extension ViewController:UIScrollViewDelegate{
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOffset = scrollView.contentOffset.y
+        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
+        if  maximumOffset - contentOffset <= threshold {
+            self.eventHandler?.tableViewDidReachBottom()
+        }
+    }
+}
+

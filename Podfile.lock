@@ -1,8 +1,14 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
+  - DZNEmptyDataSet (1.8.1)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `alamofire5-core-rewrite`)
+  - DZNEmptyDataSet
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DZNEmptyDataSet
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -16,7 +22,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: eafeeb206da2148045e57a5dc3c6a4acc65b9eb2
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
 
-PODFILE CHECKSUM: 23fe01e084aba01b9e0720b01f876a7e23f261ce
+PODFILE CHECKSUM: acb8948ae787a71e2da95aa19f1d87b256668ce9
 
 COCOAPODS: 1.5.3

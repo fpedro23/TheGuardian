@@ -19,7 +19,7 @@ class ArticlesListNavigator {
     
     func setupArticlesListModule(){
         //articlesListWireframe
-        let interactor = ArticlesListInteractor(networkLayer: OfflineNetworkLayer(numberOfArticles: 100))
+        let interactor = ArticlesListInteractor(networkLayer: TheGuardianNetworkLayer())
         let presenter = ArticlesListPresenter()
         presenter.view = articlesListView
         presenter.interactor = interactor
