@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Manages Navigation from Article List View
 class ArticlesListWireframe: NSObject {
 
     /// Presenter

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Presents List information to view controller
 protocol ArticlesListPresenterProtocol {
 
     /// Wireframe

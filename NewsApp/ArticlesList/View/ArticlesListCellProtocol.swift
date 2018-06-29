@@ -8,7 +8,16 @@
 
 import Foundation
 
+/// Cells showing information of an article in a list should conform to this protocol
 protocol ArticlesListCellProtocol {
+
+    /// Sets the title of the cell
+    ///
+    /// - Parameter title: title
     func setTitle(title: String)
+
+    /// Sets the date in the cell
+    ///
+    /// - Parameter time: date
     func setTime(time: String)
 }

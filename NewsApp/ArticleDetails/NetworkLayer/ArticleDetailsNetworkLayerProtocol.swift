@@ -10,6 +10,13 @@ import Foundation
 
 typealias ArticleDetailsFetchResultBlock = ((Article, String) -> Void)
 
+/// Article Details Network Layer
 protocol ArticleDetailsNetworkLayerProtocol {
+
+    /// Fetches details from an specific article
+    ///
+    /// - Parameters:
+    ///   - article: article
+    ///   - completion: completion block
     func fetchDetailsFromArticle(_ article: Article, completion: @escaping ArticleDetailsFetchResultBlock)
 }

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Initializer of the main VIPER modules of the app 
 class AppBuilder {
 
     /// Article List VIPER Module Navigator

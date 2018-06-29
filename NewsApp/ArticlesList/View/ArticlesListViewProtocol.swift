@@ -8,7 +8,12 @@
 
 import Foundation
 
+/// All Views that want to show a list of articles should conform to this protocol
 protocol ArticlesListViewProtocol: class {
+
+    /// UI interactions handler
     var eventHandler: ArticlesListPresenter? { get set }
+
+    /// Triggered when new data is available from presenter
     func reloadData()
 }

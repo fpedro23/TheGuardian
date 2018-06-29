@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Initializer of article list VIPER module
 class ArticlesListNavigator {
 
     /// Wireframe

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Interactor Layer for Articles List
 protocol ArticlesListInteractorProtocol {
 
     /// Network Layer
