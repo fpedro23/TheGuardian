@@ -7,15 +7,14 @@
 //
 
 import UIKit
-import DZNEmptyDataSet
 
 class ViewController: UIViewController {
 
     let threshold: CGFloat = 100.0 // threshold from bottom of tableView
     var eventHandler: ArticlesListPresenter?
     @IBOutlet weak var tableView: UITableView!
-    
-    lazy var spinner:UIActivityIndicatorView = {
+
+    lazy var spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         spinner.startAnimating()
         spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.tableView.bounds.width, height: CGFloat(44))
@@ -42,8 +41,6 @@ class ViewController: UIViewController {
     }
 
     func setupTableView() {
-        self.tableView.emptyDataSetSource = self
-        self.tableView.emptyDataSetDelegate = self
         self.tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
@@ -113,12 +110,6 @@ extension ViewController: UIViewControllerPreviewingDelegate {
 
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
         self.eventHandler?.pushControllerFromPreview(viewControllerToCommit)
-    }
-}
-
-extension ViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
-    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        return NSAttributedString(string: "Loading")
     }
 }
 

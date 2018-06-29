@@ -7,8 +7,6 @@ target 'NewsApp' do
 
   # Pods for NewsApp
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5-core-rewrite'
-
-  pod 'DZNEmptyDataSet'
   pod 'SwiftLint'
   
   target 'NewsAppTests' do
