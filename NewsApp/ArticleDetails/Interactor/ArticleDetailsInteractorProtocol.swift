@@ -9,11 +9,11 @@
 import Foundation
 
 protocol ArticleDetailsInteractorProtocol {
-    
-    init(networkLayer:ArticleDetailsNetworkLayerProtocol)
+
+    init(networkLayer: ArticleDetailsNetworkLayerProtocol)
     var presenter: ArticleDetailsPresenterProtocol? { get set }
     var article: Article? { get set }
-    var persistenceLayer:PersistenceLayerProtocol? {get set}
-    
+    var persistenceLayer: PersistenceLayerProtocol? {get set}
+
     func fetchArticleDetails(completion: @escaping ArticleDetailsFetchResultBlock)
 }

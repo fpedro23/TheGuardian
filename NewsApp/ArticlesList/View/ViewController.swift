@@ -10,11 +10,11 @@ import UIKit
 import DZNEmptyDataSet
 
 class ViewController: UIViewController {
-    
-    let threshold:CGFloat = 100.0 // threshold from bottom of tableView
+
+    let threshold: CGFloat = 100.0 // threshold from bottom of tableView
     var eventHandler: ArticlesListPresenter?
     @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,24 +23,18 @@ class ViewController: UIViewController {
         self.prepareInitalData()
         self.registerForPreview()
     }
-    
-    func registerForPreview(){
-        if( traitCollection.forceTouchCapability == .available){
+
+    func registerForPreview() {
+        if traitCollection.forceTouchCapability == .available {
             registerForPreviewing(with: self, sourceView: self.tableView)
         }
-
     }
-    
-    func prepareInitalData(){
+
+    func prepareInitalData() {
         self.eventHandler?.fetchNewArticles(for: Date())
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func setupTableView(){
+    func setupTableView() {
         self.tableView.emptyDataSetSource = self
         self.tableView.emptyDataSetDelegate = self
         self.tableView.tableFooterView = UIView()
@@ -51,9 +45,8 @@ class ViewController: UIViewController {
     }
 }
 
-
-extension ViewController:ArticlesListViewProtocol {
-    func reloadData(){
+extension ViewController: ArticlesListViewProtocol {
+    func reloadData() {
         if tableView.dataSource == nil || tableView.delegate == nil {
             tableView.dataSource = self
             tableView.delegate = self
@@ -62,15 +55,15 @@ extension ViewController:ArticlesListViewProtocol {
     }
 }
 
-extension ViewController:UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.eventHandler?.numberOfRows(in: section) ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "articlesListTableViewCell", for: indexPath)
         if let articleCell = cell as? ArticlesListCellProtocol {
@@ -78,53 +71,52 @@ extension ViewController:UITableViewDataSource {
         }
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.eventHandler?.title(for: section)
     }
-    
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.eventHandler?.numberOfSections() ?? 0
     }
 }
 
-extension ViewController:UITableViewDelegate {
-    
+extension ViewController: UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.eventHandler?.didSelectRow(at: indexPath)
     }
-    
+
 }
 
-extension ViewController:UIViewControllerPreviewingDelegate {
+extension ViewController: UIViewControllerPreviewingDelegate {
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         guard let indexPath = self.tableView.indexPathForRow(at: location) else { return nil }
         return self.eventHandler?.viewControllerForPreview(at: indexPath)
     }
-    
+
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
         self.eventHandler?.pushControllerFromPreview(viewControllerToCommit)
     }
 }
 
-extension ViewController:DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+extension ViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        return NSAttributedString(string:  "Loading")
+        return NSAttributedString(string: "Loading")
     }
 }
 
-extension ViewController:UIScrollViewDelegate{
-    
+extension ViewController: UIScrollViewDelegate {
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffset = scrollView.contentOffset.y
-        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
+        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
         if  maximumOffset - contentOffset <= threshold {
             self.eventHandler?.tableViewDidReachBottom()
         }
     }
 }
-

@@ -176,8 +176,7 @@ extension DataRequest {
         queue: DispatchQueue? = nil,
         responseSerializer: Serializer,
         completionHandler: @escaping (DataResponse<Serializer.SerializedObject>) -> Void)
-        -> Self
-    {
+        -> Self {
         internalQueue.addOperation {
             self.serializationQueue.async {
                 let start = CFAbsoluteTimeGetCurrent()
@@ -216,11 +215,10 @@ extension DownloadRequest {
     public func response(
         queue: DispatchQueue? = nil,
         completionHandler: @escaping (DownloadResponse<URL?>) -> Void)
-        -> Self
-    {
+        -> Self {
         internalQueue.addOperation {
             self.serializationQueue.async {
-                let result = Result(value: self.temporaryURL ?? self.destinationURL , error: self.error)
+                let result = Result(value: self.temporaryURL ?? self.destinationURL, error: self.error)
                 let response = DownloadResponse(request: self.request,
                                                 response: self.response,
                                                 temporaryURL: self.temporaryURL,
@@ -251,8 +249,7 @@ extension DownloadRequest {
         queue: DispatchQueue? = nil,
         responseSerializer: T,
         completionHandler: @escaping (DownloadResponse<T.SerializedObject>) -> Void)
-        -> Self
-    {
+        -> Self {
         internalQueue.addOperation {
             self.serializationQueue.async {
                 let start = CFAbsoluteTimeGetCurrent()
@@ -293,8 +290,7 @@ extension DataRequest {
     public func responseData(
         queue: DispatchQueue? = nil,
         completionHandler: @escaping (DataResponse<Data>) -> Void)
-        -> Self
-    {
+        -> Self {
         return response(queue: queue,
                         responseSerializer: DataResponseSerializer(),
                         completionHandler: completionHandler)
@@ -333,8 +329,7 @@ extension DownloadRequest {
     public func responseData(
         queue: DispatchQueue? = nil,
         completionHandler: @escaping (DownloadResponse<Data>) -> Void)
-        -> Self
-    {
+        -> Self {
         return response(
             queue: queue,
             responseSerializer: DataResponseSerializer(),
@@ -421,8 +416,7 @@ extension DownloadRequest {
         queue: DispatchQueue? = nil,
         encoding: String.Encoding? = nil,
         completionHandler: @escaping (DownloadResponse<String>) -> Void)
-        -> Self
-    {
+        -> Self {
         return response(
             queue: queue,
             responseSerializer: StringResponseSerializer(encoding: encoding),
@@ -498,8 +492,7 @@ extension DownloadRequest {
         queue: DispatchQueue? = nil,
         options: JSONSerialization.ReadingOptions = .allowFragments,
         completionHandler: @escaping (DownloadResponse<Any>) -> Void)
-        -> Self
-    {
+        -> Self {
         return response(queue: queue,
                         responseSerializer: JSONResponseSerializer(options: options),
                         completionHandler: completionHandler)

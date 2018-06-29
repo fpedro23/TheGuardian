@@ -8,25 +8,25 @@
 
 import Foundation
 
-class ArticleDetailsPresenter : ArticleDetailsPresenterProtocol {
-    var interactor:ArticleDetailsInteractorProtocol?
-    weak var wireframe:ArticleDetailsWireframe?
-    weak var view:ArticleDetailsViewProtocol?
-    let dateformatter:DateFormatter = {
+class ArticleDetailsPresenter: ArticleDetailsPresenterProtocol {
+    var interactor: ArticleDetailsInteractorProtocol?
+    weak var wireframe: ArticleDetailsWireframe?
+    weak var view: ArticleDetailsViewProtocol?
+    let dateformatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
         formatter.timeStyle = .short
         return formatter
     }()
-    
-    func didReceiveArticleInformation(article:Article, error:String){
+
+    func didReceiveArticleInformation(article: Article, error: String) {
         self.view?.setTitle(article.title)
         self.view?.setDate(dateformatter.string(from: article.date))
         self.view?.setBody(article.content ?? "")
     }
-    
-    func fetchArticleDetails(){
+
+    func fetchArticleDetails() {
         self.interactor?.fetchArticleDetails(completion: self.didReceiveArticleInformation)
     }
-    
+
 }

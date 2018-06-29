@@ -198,7 +198,6 @@ open class Request {
         set { protectedMutableState.write { $0.error = newValue } }
     }
 
-
     /// Default initializer for the `Request` superclass.
     ///
     /// - Parameters:
@@ -938,4 +937,3 @@ extension UploadRequest.Uploadable: UploadableConvertible {
 }
 
 public protocol UploadConvertible: UploadableConvertible & URLRequestConvertible { }
-

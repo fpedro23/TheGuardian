@@ -8,31 +8,32 @@
 
 import Foundation
 
-
 /// Mock Class for persistence layer, useful for Unit Testing
-class MockPersistenceStore : PersistenceLayerProtocol {
-    
+class MockPersistenceStore: PersistenceLayerProtocol {
+
     /// Mock articles for store
-    var articles:[Article] = []
-    
+    var articles: [Article] = []
 
     /// Initialize the store with the given number of articles
     ///
     /// - Parameter numberOfArticles: number of articles to create
-    init(numberOfArticles:Int){
+    init(numberOfArticles: Int) {
         for _ in 0..<numberOfArticles {
-            let article = PersistedArticle(id: UUID().uuidString, date: Date(), title: "Test Persisted Article", content: "Test Content")
+            let article = PersistedArticle(id: UUID().uuidString,
+                                           date: Date(),
+                                           title: "Test Persisted Article",
+                                           content: "Test Content")
             articles.append(article)
         }
     }
-    
+
     /// Saves the given article to the current context
     ///
     /// - Parameter article: article to persist
     func persistArticle(_ article: Article) {
         print("Persist article")
     }
-    
+
     /// Lists all the existing articles in the database
     ///
     /// - Returns: Array of Articles
@@ -47,5 +48,5 @@ class MockPersistenceStore : PersistenceLayerProtocol {
     func fetchArticle(with id: String) -> Article {
         return articles.first(where: {$0.id == id})!
     }
-    
+
 }

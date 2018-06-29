@@ -8,13 +8,13 @@
 
 import Foundation
 
-class PersistedArticle:Article {
-    var id:String
-    var title:String
-    var date:Date
-    var content:String?
-    
-    init(id:String = UUID().uuidString, date:Date = Date(), title:String, content:String?) {
+class PersistedArticle: Article {
+    var id: String
+    var title: String
+    var date: Date
+    var content: String?
+
+    init(id: String = UUID().uuidString, date: Date = Date(), title: String, content: String?) {
         self.id = id
         self.date = date
         self.title = title

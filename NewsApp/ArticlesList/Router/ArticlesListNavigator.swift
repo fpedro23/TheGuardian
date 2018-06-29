@@ -9,21 +9,20 @@
 import Foundation
 
 class ArticlesListNavigator {
-    
-    
+
     /// Wireframe
     public var articlesListWireframe = ArticlesListWireframe()
-    
+
     /// Main view controller of VIPER module
     public var articlesListView: ArticlesListViewProtocol?
 
     /// Instantiate VIPER module
-    func setup(){
+    func setup() {
         self.setupArticlesListModule()
     }
-    
+
     /// Connects and instantiates all the components of the List VIPER module
-    func setupArticlesListModule(){
+    func setupArticlesListModule() {
         //articlesListWireframe
         let interactor = ArticlesListInteractor(networkLayer: TheGuardianNetworkLayer())
         interactor.persistenceLayer = CoreDataStack()

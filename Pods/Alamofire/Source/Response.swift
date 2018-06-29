@@ -251,8 +251,7 @@ public struct DownloadResponse<Value> {
         resumeData: Data?,
         metrics: URLSessionTaskMetrics?,
         serializationDuration: TimeInterval,
-        result: Result<Value>)
-    {
+        result: Result<Value>) {
         self.request = request
         self.response = response
         self.temporaryURL = temporaryURL

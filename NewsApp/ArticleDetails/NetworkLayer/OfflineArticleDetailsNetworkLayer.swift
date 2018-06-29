@@ -8,12 +8,11 @@
 
 import Foundation
 
-class OfflineArticleDetailsNetworkLayer : ArticleDetailsNetworkLayerProtocol {
-    
-    
+class OfflineArticleDetailsNetworkLayer: ArticleDetailsNetworkLayerProtocol {
+
     func fetchDetailsFromArticle(_ article: Article, completion: @escaping (Article, String) -> Void) {
-        let expectedOnlineArticle:Article = PersistedArticle(id: "1", date: Date(), title: "Test Online Article", content: "")
-        DispatchQueue.main.asyncAfter(deadline: .now()){
+        let expectedOnlineArticle: Article = PersistedArticle(id: "1", date: Date(), title: "Test Online Article", content: "")
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             completion(expectedOnlineArticle, "")
         }
     }

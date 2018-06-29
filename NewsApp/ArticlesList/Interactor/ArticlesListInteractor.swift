@@ -9,23 +9,23 @@
 import Foundation
 import Alamofire
 
-class ArticlesListInteractor:ArticlesListInteractorProtocol {
-    var networkLayer:NetworkLayer
-    var persistenceLayer:PersistenceLayerProtocol?
-    var presenter:ArticlesListPresenterProtocol?
+class ArticlesListInteractor: ArticlesListInteractorProtocol {
+    var networkLayer: NetworkLayer
+    var persistenceLayer: PersistenceLayerProtocol?
+    var presenter: ArticlesListPresenterProtocol?
     var reachabilityManager = NetworkReachabilityManager()
     var isReachable = false
-    
-    required init(networkLayer:NetworkLayer) {
+
+    required init(networkLayer: NetworkLayer) {
         self.networkLayer = networkLayer
         //self.networkLayer.onReachabilityChangedBlock = reachabilityDidChange
         self.reachabilityManager?.listener = listener
         self.reachabilityManager?.startListening()
         self.isReachable = self.reachabilityManager?.isReachable ?? false
-    
+
     }
-    
-    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus){
+
+    func listener(status: NetworkReachabilityManager.NetworkReachabilityStatus) {
         switch status {
         case .reachable:
             if self.isReachable { return }
@@ -36,29 +36,28 @@ class ArticlesListInteractor:ArticlesListInteractorProtocol {
             print("Status did change :\(status)")
         }
     }
-    
-    func reachabilityDidChange(){
+
+    func reachabilityDidChange() {
         if let presenter = self.presenter {
-            self.fetchArticles(for: Date()){ articles, error in
+            self.fetchArticles(for: Date()) { articles, error in
              presenter.didReceiveNewArticles(articles: articles, error: error, replace: false)
             }
         }
     }
-    
-    func didReceiveArticles(articles:[Article], error:String){
+
+    func didReceiveArticles(articles: [Article], error: String) {
         if !error.isEmpty { return }
-        articles.forEach{self.persistenceLayer?.persistArticle($0)}
+        articles.forEach {self.persistenceLayer?.persistArticle($0)}
     }
-    
-    func fetchArticles(for date:Date, completion:@escaping ArticleFetchResultBlock){
+
+    func fetchArticles(for date: Date, completion:@escaping ArticleFetchResultBlock) {
         if self.isReachable {
-            self.networkLayer.fetchArticles(for: date){ articles, error in
+            self.networkLayer.fetchArticles(for: date) { articles, error in
                     self.didReceiveArticles(articles: articles, error: error)
                     completion(articles, error)
             }
-        }else{
+        } else {
             completion(self.persistenceLayer?.fetchArticles() ?? [], "")
         }
     }
 }
-

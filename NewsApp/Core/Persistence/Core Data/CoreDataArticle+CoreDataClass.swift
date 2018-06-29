@@ -9,10 +9,8 @@
 import Foundation
 import CoreData
 
-
 public class CoreDataArticle: NSManagedObject {
-    
-    
+
     /// Copies the content of the NSManagedObject to a POSO
     ///
     /// - Returns: POSO containing the information of the NSManagedObject
@@ -23,5 +21,5 @@ public class CoreDataArticle: NSManagedObject {
                                        content: self.content ?? "")
         return article
     }
-    
+
 }

@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ArticlesListCellProtocol {
-    func setTitle(title:String)
-    func setTime(time:String)
+    func setTitle(title: String)
+    func setTime(time: String)
 }

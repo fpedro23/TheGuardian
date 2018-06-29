@@ -440,6 +440,7 @@
 				8930F82420E23D500024C1F9 /* Frameworks */,
 				8930F82520E23D500024C1F9 /* Resources */,
 				0FBA31AD2E0ED8827083214C /* [CP] Embed Pods Frameworks */,
+				89862A7C20E698C600339B37 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -604,6 +605,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsAppTests/Pods-NewsAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		89862A7C20E698C600339B37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		8A567C07F939B54C755CEFAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol ArticleDetailsViewProtocol:class {
+protocol ArticleDetailsViewProtocol: class {
     var eventHandler: ArticleDetailsPresenterProtocol? { get set }
-    func setTitle(_ title:String)
-    func setDate(_ date:String)
-    func setBody(_ body:String)
+    func setTitle(_ title: String)
+    func setDate(_ date: String)
+    func setBody(_ body: String)
 }

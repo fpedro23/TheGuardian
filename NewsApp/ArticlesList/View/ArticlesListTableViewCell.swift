@@ -12,8 +12,7 @@ class ArticlesListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,14 +23,14 @@ class ArticlesListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }
 
-extension ArticlesListTableViewCell : ArticlesListCellProtocol {
-    func setTitle(title:String){
+extension ArticlesListTableViewCell: ArticlesListCellProtocol {
+    func setTitle(title: String) {
         self.titleLabel.text = title
     }
-    func setTime(time:String){
+    func setTime(time: String) {
         self.timeLabel.text = time
     }
 }

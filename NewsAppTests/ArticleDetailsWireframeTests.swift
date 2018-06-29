@@ -20,33 +20,32 @@ import Nimble
 @testable import The_Guardian
 
 class ArticleDetailsWireframeTests: QuickSpec {
-    
-    
+
     override func spec() {
         super.spec()
         describe("Creates a new Article detail wireframe") {
-            var wireframe:ArticleDetailsWireframe!
-            var viewController:ArticleDetailsViewController!
+            var wireframe: ArticleDetailsWireframe!
+            var viewController: ArticleDetailsViewController!
             let expectedArticle = PersistedArticle(title: "", content: nil)
-            
+
             beforeEach {
                 wireframe = ArticleDetailsWireframe()
-                viewController = wireframe.mainViewController(article: expectedArticle) as! ArticleDetailsViewController
+                viewController = wireframe.mainViewController(article: expectedArticle) as? ArticleDetailsViewController
             }
-            
-            it("Sets View's Presenter"){
+
+            it("Sets View's Presenter") {
                expect(viewController.eventHandler).toNot(beNil())
             }
-            
-            it("Sets Presenter's view"){
+
+            it("Sets Presenter's view") {
                 expect(wireframe.presenter?.view).toNot(beNil())
             }
-            
-            it("Sets Presenter's Interactor"){
+
+            it("Sets Presenter's Interactor") {
                 expect(wireframe.presenter?.interactor).toNot(beNil())
             }
-            
-            it("Sets Interactor's presenter"){
+
+            it("Sets Interactor's presenter") {
                 expect(wireframe.presenter?.interactor?.presenter).toNot(beNil())
             }
         }

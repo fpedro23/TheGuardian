@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ArticlesListViewProtocol:class {
+protocol ArticlesListViewProtocol: class {
     var eventHandler: ArticlesListPresenter? { get set }
     func reloadData()
 }

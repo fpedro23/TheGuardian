@@ -6,7 +6,6 @@
 //  Copyright © 2018 Pedro Contreras. All rights reserved.
 //
 
-
 import Quick
 import Nimble
 import CoreData
@@ -14,29 +13,29 @@ import CoreData
 @testable import The_Guardian
 
 class CoreDataPersitenceTests: QuickSpec {
-    
+
     override func spec() {
         super.spec()
         describe("Core Data stack test") {
-            var persistenceLayer:CoreDataStack!
+            var persistenceLayer: CoreDataStack!
             let expectedArticle = PersistedArticle(id: "1", date: Date(), title: "", content: "Content")
             beforeEach {
                 persistenceLayer = CoreDataStack()
             }
-            
-            it("Creates Articles"){
+
+            it("Creates Articles") {
                 persistenceLayer!.persistArticle(expectedArticle)
             }
-            
-            it("Fetches Articles"){
+
+            it("Fetches Articles") {
                 expect(persistenceLayer!.fetchArticles().count) > 0
             }
-            
-            it("Fetches a Given Article"){
+
+            it("Fetches a Given Article") {
                 let fetchedArticle = persistenceLayer!.fetchArticle(with: expectedArticle.id)
                 expect(fetchedArticle.id) == expectedArticle.id
             }
-    
+
         }
     }
 }

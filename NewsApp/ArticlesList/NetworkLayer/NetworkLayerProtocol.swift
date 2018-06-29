@@ -9,12 +9,12 @@
 import Foundation
 import Alamofire
 
-typealias ArticleFetchResultBlock = (([Article],String)->Void)
+typealias ArticleFetchResultBlock = (([Article], String) -> Void)
 
 protocol NetworkLayer {
-    func fetchArticles(for date:Date, completion:@escaping ArticleFetchResultBlock)
+    func fetchArticles(for date: Date, completion:@escaping ArticleFetchResultBlock)
 }
 
 protocol Reachable {
-    func listener(status:NetworkReachabilityManager.NetworkReachabilityStatus)
+    func listener(status: NetworkReachabilityManager.NetworkReachabilityStatus)
 }

@@ -53,7 +53,6 @@ open class ServerTrustManager {
     }
 }
 
-
 /// A protocol describing the API used to evaluate server trusts.
 public protocol ServerTrustEvaluating {
     #if os(Linux)

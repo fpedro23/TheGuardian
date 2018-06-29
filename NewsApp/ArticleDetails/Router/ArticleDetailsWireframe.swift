@@ -10,13 +10,12 @@ import Foundation
 import UIKit
 
 class ArticleDetailsWireframe {
-    public var view:(UIViewController & ArticleDetailsViewProtocol)?
-    weak public var presenter:ArticleDetailsPresenterProtocol?
+    public var view: (UIViewController & ArticleDetailsViewProtocol)?
+    weak public var presenter: ArticleDetailsPresenterProtocol?
     public var interactorType: ArticleDetailsInteractorProtocol.Type = ArticleDetailsInteractor.self
     public var articleDetailsViewType: (UIViewController & ArticleDetailsViewProtocol).Type = ArticleDetailsViewController.self
 
-    
-    func mainViewController(article:Article) -> UIViewController{
+    func mainViewController(article: Article) -> UIViewController {
         var interactor = interactorType.init(networkLayer: TheGuardianArticleDetailsNetworkLayer())
         interactor.persistenceLayer = CoreDataStack()
         let view = self.createNewArticleDetailsView()
@@ -28,12 +27,12 @@ class ArticleDetailsWireframe {
         interactor.article = article
         view.eventHandler = presenter
         self.presenter = presenter
-        
+
         return view
     }
-    
+
     public func createNewArticleDetailsView() -> (UIViewController & ArticleDetailsViewProtocol) {
-        let view = articleDetailsViewType.init() 
+        let view = articleDetailsViewType.init()
         self.view = view
         return view
     }

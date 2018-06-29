@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol ArticleDetailsPresenterProtocol:class {
-    var interactor:ArticleDetailsInteractorProtocol? {get set}
-    var view:ArticleDetailsViewProtocol? { get set }
+protocol ArticleDetailsPresenterProtocol: class {
+    var interactor: ArticleDetailsInteractorProtocol? {get set}
+    var view: ArticleDetailsViewProtocol? { get set }
     func fetchArticleDetails()
-    func didReceiveArticleInformation(article:Article, error:String)
+    func didReceiveArticleInformation(article: Article, error: String)
 }

@@ -11,5 +11,5 @@ import Foundation
 typealias ArticleDetailsFetchResultBlock = ((Article, String) -> Void)
 
 protocol ArticleDetailsNetworkLayerProtocol {
-    func fetchDetailsFromArticle(_ article:Article, completion: @escaping ArticleDetailsFetchResultBlock)
+    func fetchDetailsFromArticle(_ article: Article, completion: @escaping ArticleDetailsFetchResultBlock)
 }
