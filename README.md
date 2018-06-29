@@ -19,6 +19,5 @@ From: https://www.objc.io/issues/13-architecture/viper/
 
 ## External Libraries
 
-* DZNEmptyDataSet
 * Alamofire
-
+* SwiftLint
