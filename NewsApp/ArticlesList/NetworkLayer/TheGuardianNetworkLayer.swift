@@ -17,10 +17,10 @@ class TheGuardianNetworkLayer:NetworkLayer {
     var query = "international"
     var requestURL = "https://content.guardianapis.com/search"
     var parameters:Parameters { return ["api-key":self.apiKey,
-                                      "format":self.format,
-                                      "q":self.query,
-                                      "page-size":20,
-                                      "page":self.currentPage]
+                                        "format":self.format,
+                                        "q":self.query,
+                                        "page-size":20,
+                                        "page":self.currentPage]
     }
     var currentPage:Int = 1
     
@@ -39,11 +39,11 @@ class TheGuardianNetworkLayer:NetworkLayer {
             guard let data = try? JSONSerialization.data(withJSONObject: results) else {
                 return  completion([], "No valid JSON Data")
             }
-                        let jsonDecoder = JSONDecoder()
-                        jsonDecoder.dateDecodingStrategy = .iso8601
+            let jsonDecoder = JSONDecoder()
+            jsonDecoder.dateDecodingStrategy = .iso8601
             guard let articles = try? jsonDecoder.decode([TheGuardianArticle].self, from: data) else {
                 return  completion([], "Could not serialize json to model")
-
+                
             }
             
             DispatchQueue.main.async {

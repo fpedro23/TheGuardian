@@ -30,8 +30,6 @@ class ArticleDetailsViewController: UIViewController {
         self.eventHandler?.fetchArticleDetails()
         self.bodyView.scrollView.isScrollEnabled = false
         self.bodyView.navigationDelegate = self
-        //self.bodyView.removeGestureRecognizer(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
-
     }
 
     override func didReceiveMemoryWarning() {

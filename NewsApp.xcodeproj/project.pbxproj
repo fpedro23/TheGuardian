@@ -40,13 +40,13 @@
 		899AC67420E3661B00F6D949 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AC67220E3661B00F6D949 /* ArticleDetailsViewController.swift */; };
 		899AC67520E3661B00F6D949 /* ArticleDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899AC67320E3661B00F6D949 /* ArticleDetailsViewController.xib */; };
 		899AC67720E3725F00F6D949 /* OfflineArticleDetailsNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AC67620E3725F00F6D949 /* OfflineArticleDetailsNetworkLayer.swift */; };
+		899EB28C20E63F5E00380298 /* CoreDataArticle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899EB28A20E63F5D00380298 /* CoreDataArticle+CoreDataProperties.swift */; };
+		899EB28D20E63F5E00380298 /* CoreDataArticle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899EB28B20E63F5E00380298 /* CoreDataArticle+CoreDataClass.swift */; };
 		899F314E20E3B748009DF6F8 /* iPhone.css in Resources */ = {isa = PBXBuildFile; fileRef = 899F314D20E3B748009DF6F8 /* iPhone.css */; };
 		899F315020E3B7A6009DF6F8 /* Monotype Sabon Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 899F314F20E3B7A6009DF6F8 /* Monotype Sabon Regular.otf */; };
 		89BF27A220E499500034C5A9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27A120E499500034C5A9 /* Article.swift */; };
 		89BF27A420E49A290034C5A9 /* PersistedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27A320E49A290034C5A9 /* PersistedArticle.swift */; };
 		89BF27A920E4A33E0034C5A9 /* TheGuardian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27A620E4A2710034C5A9 /* TheGuardian.xcdatamodeld */; };
-		89BF27AF20E4A3F90034C5A9 /* CoreDataArticle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27AE20E4A3F80034C5A9 /* CoreDataArticle+CoreDataProperties.swift */; };
-		89BF27B120E4A40C0034C5A9 /* CoreDataArticle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27B020E4A40B0034C5A9 /* CoreDataArticle+CoreDataClass.swift */; };
 		89BF27F020E4A4AD0034C5A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27EF20E4A4AD0034C5A9 /* CoreDataStack.swift */; };
 		89BF27F220E4A5E10034C5A9 /* PersistenceLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27F120E4A5E10034C5A9 /* PersistenceLayerProtocol.swift */; };
 		89BF27F420E4DF7A0034C5A9 /* ArticleListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF27F320E4DF7A0034C5A9 /* ArticleListInteractorProtocol.swift */; };
@@ -127,13 +127,13 @@
 		899AC67220E3661B00F6D949 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		899AC67320E3661B00F6D949 /* ArticleDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleDetailsViewController.xib; sourceTree = "<group>"; };
 		899AC67620E3725F00F6D949 /* OfflineArticleDetailsNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineArticleDetailsNetworkLayer.swift; sourceTree = "<group>"; };
+		899EB28A20E63F5D00380298 /* CoreDataArticle+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataArticle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		899EB28B20E63F5E00380298 /* CoreDataArticle+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataArticle+CoreDataClass.swift"; sourceTree = "<group>"; };
 		899F314D20E3B748009DF6F8 /* iPhone.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = iPhone.css; sourceTree = "<group>"; };
 		899F314F20E3B7A6009DF6F8 /* Monotype Sabon Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monotype Sabon Regular.otf"; sourceTree = "<group>"; };
 		89BF27A120E499500034C5A9 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		89BF27A320E49A290034C5A9 /* PersistedArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedArticle.swift; sourceTree = "<group>"; };
 		89BF27A720E4A2710034C5A9 /* CoreDataArticle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataArticle.xcdatamodel; sourceTree = "<group>"; };
-		89BF27AE20E4A3F80034C5A9 /* CoreDataArticle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreDataArticle+CoreDataProperties.swift"; path = "/Users/pedrocontreras/Desktop/NewsApp/NewsApp/ArticlesList/Persistence/CoreDataArticle+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		89BF27B020E4A40B0034C5A9 /* CoreDataArticle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreDataArticle+CoreDataClass.swift"; path = "/Users/pedrocontreras/Desktop/NewsApp/NewsApp/ArticlesList/Persistence/CoreDataArticle+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		89BF27EF20E4A4AD0034C5A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		89BF27F120E4A5E10034C5A9 /* PersistenceLayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerProtocol.swift; sourceTree = "<group>"; };
 		89BF27F320E4DF7A0034C5A9 /* ArticleListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -267,7 +267,6 @@
 		8930F85820E23F670024C1F9 /* ArticlesList */ = {
 			isa = PBXGroup;
 			children = (
-				89BF27A520E4A1C10034C5A9 /* Persistence */,
 				89BF27A020E4990C0034C5A9 /* Entity */,
 				8930F86720E247AC0024C1F9 /* Interactor */,
 				8930F86620E247A80024C1F9 /* Router */,
@@ -330,6 +329,7 @@
 		899AC64E20E28BA300F6D949 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				89BF27A520E4A1C10034C5A9 /* Persistence */,
 				8930F82A20E23D500024C1F9 /* AppDelegate.swift */,
 				89087A5E20E2898F00DE8CD9 /* AppBuilder.swift */,
 				899AC64F20E28BB700F6D949 /* CoreViews.swift */,
@@ -420,8 +420,8 @@
 		89DC13B720E4F3330074CC39 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				89BF27AE20E4A3F80034C5A9 /* CoreDataArticle+CoreDataProperties.swift */,
-				89BF27B020E4A40B0034C5A9 /* CoreDataArticle+CoreDataClass.swift */,
+				899EB28B20E63F5E00380298 /* CoreDataArticle+CoreDataClass.swift */,
+				899EB28A20E63F5D00380298 /* CoreDataArticle+CoreDataProperties.swift */,
 				89BF27EF20E4A4AD0034C5A9 /* CoreDataStack.swift */,
 				89BF27A620E4A2710034C5A9 /* TheGuardian.xcdatamodeld */,
 			);
@@ -667,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BF27A220E499500034C5A9 /* Article.swift in Sources */,
+				899EB28C20E63F5E00380298 /* CoreDataArticle+CoreDataProperties.swift in Sources */,
 				8930F86320E2437C0024C1F9 /* TheGuardianArticle.swift in Sources */,
 				899AC66D20E3648300F6D949 /* ArticleDetailsInteractor.swift in Sources */,
 				8930F86920E247FD0024C1F9 /* ArticlesListPresenter.swift in Sources */,
@@ -684,18 +685,17 @@
 				899AC65920E292B300F6D949 /* ArticlesListTableViewCell.swift in Sources */,
 				8930F85A20E241140024C1F9 /* ArticlesListInteractor.swift in Sources */,
 				89BF27F420E4DF7A0034C5A9 /* ArticleListInteractorProtocol.swift in Sources */,
-				89BF27B120E4A40C0034C5A9 /* CoreDataArticle+CoreDataClass.swift in Sources */,
 				89BF27A920E4A33E0034C5A9 /* TheGuardian.xcdatamodeld in Sources */,
 				8930F86B20E248700024C1F9 /* ArticlesListViewProtocol.swift in Sources */,
 				899AC67120E364DD00F6D949 /* ArticleDetailsNetworkLayerProtocol.swift in Sources */,
 				899AC67420E3661B00F6D949 /* ArticleDetailsViewController.swift in Sources */,
 				899AC65020E28BB700F6D949 /* CoreViews.swift in Sources */,
 				8930F85D20E242E60024C1F9 /* NetworkLayerProtocol.swift in Sources */,
-				89BF27AF20E4A3F90034C5A9 /* CoreDataArticle+CoreDataProperties.swift in Sources */,
 				899AC66920E35B4B00F6D949 /* ArticleDetailsInteractorProtocol.swift in Sources */,
 				89BF27F620E4E0010034C5A9 /* ArticleListPresenterProtocol.swift in Sources */,
 				899AC65420E28F0200F6D949 /* ArticlesListWireframe.swift in Sources */,
 				89DC13B920E4F35C0074CC39 /* MockPersistenceStore.swift in Sources */,
+				899EB28D20E63F5E00380298 /* CoreDataArticle+CoreDataClass.swift in Sources */,
 				899AC65220E28DC000F6D949 /* ArticlesListNavigator.swift in Sources */,
 				899AC65620E2923700F6D949 /* ArticlesListCellProtocol.swift in Sources */,
 				8930F82B20E23D500024C1F9 /* AppDelegate.swift in Sources */,

@@ -69,7 +69,7 @@ class TheGuardianNetworkLayerTests: QuickSpec {
                     
                     
                     print("🌳🌳🌳🌳🌳🌳🌳🌳🌳🌳")
-                    expect(expectedError).toEventuallyNot(beNil(), timeout: 10)
+                    expect(expectedError).toEventuallyNot(beEmpty(), timeout: 10)
                 }
                 
             }
