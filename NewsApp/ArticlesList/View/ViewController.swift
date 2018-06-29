@@ -14,6 +14,13 @@ class ViewController: UIViewController {
     let threshold: CGFloat = 100.0 // threshold from bottom of tableView
     var eventHandler: ArticlesListPresenter?
     @IBOutlet weak var tableView: UITableView!
+    
+    lazy var spinner:UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        spinner.startAnimating()
+        spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.tableView.bounds.width, height: CGFloat(44))
+        return spinner
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +49,11 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: "ArticlesListTableViewCell", bundle: nil), forCellReuseIdentifier: "articlesListTableViewCell")
 
+    }
+
+    func addLoadingIndicator() {
+        self.tableView.tableFooterView = self.spinner
+        self.tableView.tableFooterView?.isHidden = false
     }
 }
 
@@ -117,6 +129,7 @@ extension ViewController: UIScrollViewDelegate {
         let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
         if  maximumOffset - contentOffset <= threshold {
             self.eventHandler?.tableViewDidReachBottom()
+            self.addLoadingIndicator()
         }
     }
 }
