@@ -24,7 +24,7 @@ class TheGuardianNetworkLayer: NetworkLayer {
     var currentPage: Int = 1
 
     func fetchArticles(for date: Date, completion:@escaping ArticleFetchResultBlock) {
-        Alamofire.request(requestURL, parameters: parameters).responseJSON { response in
+        AF.request(requestURL, parameters: parameters).responseJSON { response in
             guard response.result.isSuccess else {
                 return  completion([], response.result.error.debugDescription)
             }

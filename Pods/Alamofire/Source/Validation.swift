@@ -83,7 +83,8 @@ extension Request {
         statusCode acceptableStatusCodes: S,
         response: HTTPURLResponse)
         -> ValidationResult
-        where S.Iterator.Element == Int {
+        where S.Iterator.Element == Int
+    {
         if acceptableStatusCodes.contains(response.statusCode) {
             return .success(Void())
         } else {
@@ -99,7 +100,8 @@ extension Request {
         response: HTTPURLResponse,
         data: Data?)
         -> ValidationResult
-        where S.Iterator.Element == String {
+        where S.Iterator.Element == String
+    {
         guard let data = data, data.count > 0 else { return .success(Void()) }
 
         guard
@@ -168,9 +170,9 @@ extension DataRequest {
     ///
     /// - returns: The request.
     @discardableResult
-    public func validate<S: Sequence>(contentType acceptableContentTypes: S) -> Self where S.Iterator.Element == String {
+    public func validate<S: Sequence>(contentType acceptableContentTypes: @escaping @autoclosure () -> S) -> Self where S.Iterator.Element == String {
         return validate { [unowned self] _, response, data in
-            return self.validate(contentType: acceptableContentTypes, response: response, data: data)
+            return self.validate(contentType: acceptableContentTypes(), response: response, data: data)
         }
     }
 
@@ -194,8 +196,7 @@ extension DownloadRequest {
     public typealias Validation = (
         _ request: URLRequest?,
         _ response: HTTPURLResponse,
-        _ temporaryURL: URL?,
-        _ destinationURL: URL?)
+        _ fileURL: URL?)
         -> ValidationResult
 
     /// Validates that the response has a status code in the specified sequence.
@@ -207,7 +208,7 @@ extension DownloadRequest {
     /// - returns: The request.
     @discardableResult
     public func validate<S: Sequence>(statusCode acceptableStatusCodes: S) -> Self where S.Iterator.Element == Int {
-        return validate { [unowned self] _, response, _, _ in
+        return validate { [unowned self] (_, response, _) in
             return self.validate(statusCode: acceptableStatusCodes, response: response)
         }
     }
@@ -220,17 +221,15 @@ extension DownloadRequest {
     ///
     /// - returns: The request.
     @discardableResult
-    public func validate<S: Sequence>(contentType acceptableContentTypes: S) -> Self where S.Iterator.Element == String {
-        return validate { [unowned self] _, response, _, _ in
-            let fileURL = self.fileURL
-
+    public func validate<S: Sequence>(contentType acceptableContentTypes: @escaping @autoclosure () -> S) -> Self where S.Iterator.Element == String {
+        return validate { [unowned self] (_, response, fileURL) in
             guard let validFileURL = fileURL else {
                 return .failure(AFError.responseValidationFailed(reason: .dataFileNil))
             }
 
             do {
                 let data = try Data(contentsOf: validFileURL)
-                return self.validate(contentType: acceptableContentTypes, response: response, data: data)
+                return self.validate(contentType: acceptableContentTypes(), response: response, data: data)
             } catch {
                 return .failure(AFError.responseValidationFailed(reason: .dataFileReadFailed(at: validFileURL)))
             }

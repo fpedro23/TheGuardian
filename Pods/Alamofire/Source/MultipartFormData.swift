@@ -277,7 +277,8 @@ open class MultipartFormData {
             }
 
             bodyContentLength = fileSize.uint64Value
-        } catch {
+        }
+        catch {
             setBodyPartError(withReason: .bodyPartFileSizeQueryFailedWithError(forURL: fileURL, error: error))
             return
         }
@@ -313,7 +314,8 @@ open class MultipartFormData {
         withLength length: UInt64,
         name: String,
         fileName: String,
-        mimeType: String) {
+        mimeType: String)
+    {
         let headers = contentHeaders(withName: name, fileName: fileName, mimeType: mimeType)
         append(stream, withLength: length, headers: headers)
     }
@@ -419,14 +421,11 @@ open class MultipartFormData {
     }
 
     private func encodeHeaders(for bodyPart: BodyPart) -> Data {
-        var headerText = ""
+        let headerText = bodyPart.headers.map { "\($0.name): \($0.value)\(EncodingCharacters.crlf)" }
+                                         .joined()
+                                         + EncodingCharacters.crlf
 
-        for (key, value) in bodyPart.headers {
-            headerText += "\(key): \(value)\(EncodingCharacters.crlf)"
-        }
-        headerText += EncodingCharacters.crlf
-
-        return headerText.data(using: String.Encoding.utf8, allowLossyConversion: false)!
+        return Data(headerText.utf8)
     }
 
     private func encodeBodyStream(for bodyPart: BodyPart) throws -> Data {
@@ -547,12 +546,12 @@ open class MultipartFormData {
 
     // MARK: - Private - Content Headers
 
-    private func contentHeaders(withName name: String, fileName: String? = nil, mimeType: String? = nil) -> [String: String] {
+    private func contentHeaders(withName name: String, fileName: String? = nil, mimeType: String? = nil) -> HTTPHeaders {
         var disposition = "form-data; name=\"\(name)\""
         if let fileName = fileName { disposition += "; filename=\"\(fileName)\"" }
 
-        var headers = ["Content-Disposition": disposition]
-        if let mimeType = mimeType { headers["Content-Type"] = mimeType }
+        var headers: HTTPHeaders = [.contentDisposition(disposition)]
+        if let mimeType = mimeType { headers.add(.contentType(mimeType)) }
 
         return headers
     }

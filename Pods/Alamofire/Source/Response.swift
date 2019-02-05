@@ -89,20 +89,19 @@ extension DataResponse: CustomStringConvertible, CustomDebugStringConvertible {
     public var debugDescription: String {
         let requestDescription = request.map { "\($0.httpMethod!) \($0)" } ?? "nil"
         let responseDescription = response.map { (response) in
-            let headers = response.allHeaderFields as! HTTPHeaders
-            let keys = headers.keys.sorted(by: >)
-            let sortedHeaders = keys.map { "\($0): \(headers[$0]!)" }.joined(separator: "\n")
+            let sortedHeaders = response.httpHeaders.sorted()
 
             return """
-            Status Code: \(response.statusCode)
-                        Headers: \(sortedHeaders)
-            """
+                   [Status Code]: \(response.statusCode)
+                   [Headers]:
+                   \(sortedHeaders)
+                   """
         } ?? "nil"
         let metricsDescription = metrics.map { "\($0.taskInterval.duration)s" } ?? "None"
 
         return """
         [Request]: \(requestDescription)
-        [Response]: \(responseDescription)
+        [Response]: \n\(responseDescription)
         [Data]: \(data?.description ?? "None")
         [Network Duration]: \(metricsDescription)
         [Serialization Duration]: \(serializationDuration)s
@@ -208,11 +207,8 @@ public struct DownloadResponse<Value> {
     /// The server's response to the URL request.
     public let response: HTTPURLResponse?
 
-    /// The temporary destination URL of the data returned from the server.
-    public let temporaryURL: URL?
-
-    /// The final destination URL of the data returned from the server if it was moved.
-    public let destinationURL: URL?
+    /// The final destination URL of the data returned from the server after it is moved.
+    public let fileURL: URL?
 
     /// The resume data generated if the request was cancelled.
     public let resumeData: Data?
@@ -246,16 +242,15 @@ public struct DownloadResponse<Value> {
     public init(
         request: URLRequest?,
         response: HTTPURLResponse?,
-        temporaryURL: URL?,
-        destinationURL: URL?,
+        fileURL: URL?,
         resumeData: Data?,
         metrics: URLSessionTaskMetrics?,
         serializationDuration: TimeInterval,
-        result: Result<Value>) {
+        result: Result<Value>)
+    {
         self.request = request
         self.response = response
-        self.temporaryURL = temporaryURL
-        self.destinationURL = destinationURL
+        self.fileURL = fileURL
         self.resumeData = resumeData
         self.metrics = metrics
         self.serializationDuration = serializationDuration
@@ -278,23 +273,21 @@ extension DownloadResponse: CustomStringConvertible, CustomDebugStringConvertibl
     public var debugDescription: String {
         let requestDescription = request.map { "\($0.httpMethod!) \($0)" } ?? "nil"
         let responseDescription = response.map { (response) in
-            let headers = response.allHeaderFields as! HTTPHeaders
-            let keys = headers.keys.sorted(by: >)
-            let sortedHeaders = keys.map { "\($0): \(headers[$0]!)" }.joined(separator: "\n")
+            let sortedHeaders = response.httpHeaders.sorted()
 
             return """
-            Status Code: \(response.statusCode)
-            Headers: \(sortedHeaders)
-            """
+                   [Status Code]: \(response.statusCode)
+                   [Headers]:
+                   \(sortedHeaders)
+                   """
         } ?? "nil"
         let metricsDescription = metrics.map { "\($0.taskInterval.duration)s" } ?? "None"
         let resumeDataDescription = resumeData.map { "\($0)" } ?? "None"
 
         return """
         [Request]: \(requestDescription)
-        [Response]: \(responseDescription)
-        [TemporaryURL]: \(temporaryURL?.path ?? "nil")
-        [DestinationURL]: \(destinationURL?.path ?? "nil")
+        [Response]: \n\(responseDescription)
+        [File URL]: \(fileURL?.path ?? "nil")
         [ResumeData]: \(resumeDataDescription)
         [Network Duration]: \(metricsDescription)
         [Serialization Duration]: \(serializationDuration)s
@@ -321,9 +314,8 @@ extension DownloadResponse {
     public func map<T>(_ transform: (Value) -> T) -> DownloadResponse<T> {
         return DownloadResponse<T>(
             request: request,
-            response: self.response,
-            temporaryURL: temporaryURL,
-            destinationURL: destinationURL,
+            response: response,
+            fileURL: fileURL,
             resumeData: resumeData,
             metrics: metrics,
             serializationDuration: serializationDuration,
@@ -348,9 +340,8 @@ extension DownloadResponse {
     public func flatMap<T>(_ transform: (Value) throws -> T) -> DownloadResponse<T> {
         return DownloadResponse<T>(
             request: request,
-            response: self.response,
-            temporaryURL: temporaryURL,
-            destinationURL: destinationURL,
+            response: response,
+            fileURL: fileURL,
             resumeData: resumeData,
             metrics: metrics,
             serializationDuration: serializationDuration,
@@ -370,9 +361,8 @@ extension DownloadResponse {
     public func mapError<E: Error>(_ transform: (Error) -> E) -> DownloadResponse {
         return DownloadResponse(
             request: request,
-            response: self.response,
-            temporaryURL: temporaryURL,
-            destinationURL: destinationURL,
+            response: response,
+            fileURL: fileURL,
             resumeData: resumeData,
             metrics: metrics,
             serializationDuration: serializationDuration,
@@ -395,9 +385,8 @@ extension DownloadResponse {
     public func flatMapError<E: Error>(_ transform: (Error) throws -> E) -> DownloadResponse {
         return DownloadResponse(
             request: request,
-            response: self.response,
-            temporaryURL: temporaryURL,
-            destinationURL: destinationURL,
+            response: response,
+            fileURL: fileURL,
             resumeData: resumeData,
             metrics: metrics,
             serializationDuration: serializationDuration,

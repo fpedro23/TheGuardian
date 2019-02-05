@@ -22,7 +22,7 @@ class TheGuardianArticleDetailsNetworkLayer: ArticleDetailsNetworkLayerProtocol 
     ]
 
     func fetchDetailsFromArticle(_ article: Article, completion: @escaping (Article, String) -> Void) {
-        Alamofire.request(requestURL + article.id, parameters: parameters).responseJSON { response in
+        AF.request(requestURL + article.id, parameters: parameters).responseJSON { response in
             guard response.result.isSuccess else {
                 completion(PersistedArticle(id: "", date: Date(), title: "", content: nil), response.result.error.debugDescription)
                 return
